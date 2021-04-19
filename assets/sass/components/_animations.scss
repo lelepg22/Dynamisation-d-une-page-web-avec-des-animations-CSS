@@ -1,0 +1,139 @@
+@keyframes filllike {
+    from {
+        transform:scale(0.5);
+         opacity:0;
+     }      
+     
+ 
+     to{
+         transform: scale(1);
+         opacity:1;   
+     }
+ 
+ }
+
+ @keyframes likevide {
+    from {
+            opacity:1;
+     }      
+     
+ 
+     to{         
+         opacity:0;   
+     }
+ 
+ }
+
+ @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);   
+      opacity: 1;   
+    }
+    100% {
+      transform: rotate(360deg); 
+      opacity: 0;
+      
+    }
+}
+
+@keyframes loadmain{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacitymenu{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes selected{
+
+    0% {
+        transform-origin: right;
+       transform: scaleX(0.2);
+       
+
+    }
+    
+
+    30%{
+        transform: scaleX(0.4);
+        transform-origin: right;        
+        
+    }
+
+    50%{
+        transform: scaleX(0.6);
+        transform-origin: right;   
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin: right; 
+
+    }
+
+}
+
+@keyframes prixmove{
+
+    0%{
+        left: 70%;
+    }
+
+    30%{
+        left: 55%;
+    }
+
+    50%{
+        left:40%;        
+    }
+    
+    100%{
+        left:0%;        
+    }
+    
+}
+@keyframes checkicon{
+    0%{
+        
+        transform:rotate(360deg) ;
+        opacity: 0;
+    }    
+    30%{
+        
+        transform:rotate(290eg) ;
+        opacity: 1;
+    }
+
+    50%{       
+        transform:rotate(150deg) ;
+        opacity: 1;        
+        }
+    
+    100%{
+        transform:rotate(0deg) ;
+        opacity:1;
+          
+    }   
+}
+
+@keyframes menuprixitem
+{
+    0%{
+        grid-template-columns: 83% 1% 33%;
+
+    }
+
+    100%{
+        grid-template-columns: 60% 1% 10%;
+
+    }
+}

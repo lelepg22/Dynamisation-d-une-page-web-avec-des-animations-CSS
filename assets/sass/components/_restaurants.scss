@@ -1,0 +1,459 @@
+@media screen and (max-width:1366px) {
+.imgrestomenu
+{
+max-width: 27%;
+position: relative;
+bottom: 18%;   
+left: 36%;     
+border-radius: 25px;
+box-shadow: $box-shadow;
+}
+
+
+
+.tmenusection
+{
+border-bottom: 2px solid $color-tertiare;
+width: 50px;
+}
+
+
+.coeurmenu
+{    
+font-size:1.2em;
+}
+
+
+.espacement
+{
+padding-top: 1%;
+margin-top: 11px;
+}
+.menu
+{
+justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center; 
+
+&__animationselected
+{
+    background-color: $color-tertiare;   
+    padding: 28px;        
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 44%;
+    transform: scale(0);
+    position: relative;
+    left: 26%;
+    bottom: 19px;
+    height: 32px;
+}
+&__checkedicon
+{
+    font-size: 2em;
+    background-color: $color-tertiare;
+    border-radius: 39px;
+    color:$color-blanc;
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    margin-left: 32%;
+    line-height: 30px !important;
+    
+}
+
+&__prix
+{
+    font-weight: bold;
+    position: relative;
+    left: 77%;
+    top: 58px;
+
+    &__trigger
+    {
+        transform-origin: right;
+        position: relative;
+        bottom: 86px;
+        width: 35%;
+        height: 88px;
+        left: 64%;  
+
+      
+        
+       
+        
+    }
+}
+&__choix
+{
+    background-color: $color-grisclaire;
+    box-shadow: $box-shadow;  
+    width: 40%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+&__titre
+{
+    font-family:$font-titre;
+    text-align: center;
+    background-color: $color-grisclaire;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: $box-shadow;
+    width: 82%;
+    margin-left: -8%;        
+}
+&__like
+{
+    font-size: 1.6em;
+    text-align: center;
+    display: flow-root !important;
+    position: relative;
+    margin-top: -56px;
+    margin-right: -284px;
+    padding-bottom: 3%;
+    transform-origin: bottom;       
+    
+}
+&__likefill
+{
+    font-size: 1.6em;
+    text-align: center;
+    display: block !important;
+    position: relative;
+    margin-top: -35px;
+    margin-right: -284px;
+    padding-bottom: 3%; 
+    color:$color-primaire;
+    opacity: 0;       
+
+}
+.animationheart {
+    transform-origin: bottom;    
+
+&:hover .menu__likefill {
+    animation: filllike 500ms ease-in;        
+    animation-fill-mode: both;   
+}
+    
+&:hover .menu__like {
+    animation: likevide 500ms ease-in;        
+    animation-fill-mode: both;   
+}
+
+}
+&__button
+{
+    
+    margin-top: 14%;
+    margin-bottom: 11%;
+}
+&__epd
+{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 69%;         
+
+
+    &__item
+    {
+        background-color: $color-blanc;
+        border-radius: 30px;
+        padding-left: 29px;
+        margin-bottom: 3%;
+        height: 88px;
+        display: flex;
+        flex-direction: column;
+
+        &__titreplat
+        {
+            font-weight: bold;
+        }
+
+        &__descriptionprix
+        {
+            display: grid;
+            grid-template-columns: 83% 1% 33%;                             
+            margin-top: 0px;                
+        }
+        &:hover .menu__epd__item__descriptionprix{
+            animation:menuprixitem 300ms linear;
+            animation-fill-mode: forwards;
+        }
+        &:hover .menu__checkedicon{
+            animation: checkicon 250ms linear;
+            animation-fill-mode: both;
+        }
+        &:hover .menu__animationselected{ 
+            animation:selected 300ms linear;
+            animation-fill-mode: both;
+
+        }
+        &:hover .menu__prix {
+            animation:prixmove 300ms linear;
+            animation-fill-mode: both;
+        }
+       
+        
+    }
+    @include menuitemanimation;
+
+}
+
+&__section
+{
+    border-bottom: 2px solid $color-tertiare;
+    width: 50px;
+    margin-left: 39%;
+    &__platmargin
+    {
+        margin-left: 0%;
+    }
+    &__dessertmargin
+    {
+        margin-right: -1%;
+    }
+
+
+}
+
+}
+}
+
+@media screen and (min-width:1368px) {
+.imgrestomenu
+{
+    max-width: 27%;
+    position: relative;
+    bottom: 18%;   
+    left: 36%;     
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+}
+
+
+
+.tmenusection
+{
+    border-bottom: 2px solid $color-tertiare;
+    width: 50px;
+}
+
+
+.coeurmenu
+{    
+    font-size:1.2em;
+}
+
+
+.espacement
+{
+    padding-top: 1%;
+    margin-top: 11px;
+}
+.menu
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    &__animationselected
+    {
+        background-color: $color-tertiare;   
+        padding: 28px;        
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 44%;
+        transform: scale(0);
+        position: relative;
+        left: 26%;
+        bottom: 19px;
+        height: 32px;
+    }
+    &__checkedicon
+    {
+        font-size: 2em;
+        background-color: $color-tertiare;
+        border-radius: 39px;
+        color:$color-blanc;
+        display: flex;
+        width: 30px;
+        justify-content: center;
+        margin-left: 32%;
+        line-height: 30px !important;
+        
+    }
+
+    &__prix
+    {
+        font-weight: bold;
+        position: relative;
+        left: 77%;
+        top: 58px;
+
+        &__trigger
+        {
+            transform-origin: right;
+            position: relative;
+            bottom: 86px;
+            width: 35%;
+            height: 88px;
+            left: 64%;  
+
+        
+            
+        
+            
+        }
+    }
+    &__choix
+    {
+        background-color: $color-grisclaire;
+        box-shadow: $box-shadow;  
+        width: 40%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__titre
+    {
+        font-family:$font-titre;
+        text-align: center;
+        background-color: $color-grisclaire;
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        box-shadow: $box-shadow;
+        width: 82%;
+        margin-left: -8%;        
+    }
+    &__like
+    {
+        font-size: 1.6em;
+        text-align: center;
+        display: flow-root !important;
+        position: relative;
+        margin-top: -56px;
+        margin-right: -284px;
+        padding-bottom: 3%;
+        transform-origin: bottom;       
+        
+    }
+    &__likefill
+    {
+        font-size: 1.6em;
+        text-align: center;
+        display: block !important;
+        position: relative;
+        margin-top: -35px;
+        margin-right: -284px;
+        padding-bottom: 3%; 
+        color:$color-primaire;
+        opacity: 0;       
+
+    }
+    .animationheart {
+        transform-origin: bottom;    
+
+    &:hover .menu__likefill {
+        animation: filllike 500ms ease-in;        
+        animation-fill-mode: both;   
+    }
+        
+    &:hover .menu__like {
+        animation: likevide 500ms ease-in;        
+        animation-fill-mode: both;   
+    }
+
+    }
+    &__button
+    {
+        
+        margin-top: 14%;
+        margin-bottom: 11%;
+    }
+    &__epd
+    {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 69%;         
+
+
+        &__item
+        {
+            background-color: $color-blanc;
+            border-radius: 30px;
+            padding-left: 29px;
+            margin-bottom: 3%;
+            height: 88px;
+            display: flex;
+            flex-direction: column;
+
+            &__titreplat
+            {
+                font-weight: bold;
+            }
+
+            &__descriptionprix
+            {
+                display: grid;
+                grid-template-columns: 83% 1% 33%;                             
+                margin-top: 0px;                
+            }
+            &:hover .menu__epd__item__descriptionprix{
+                animation:menuprixitem 300ms linear;
+                animation-fill-mode: forwards;
+            }
+            &:hover .menu__checkedicon{
+                animation: checkicon 250ms linear;
+                animation-fill-mode: both;
+            }
+            &:hover .menu__animationselected{ 
+                animation:selected 300ms linear;
+                animation-fill-mode: both;
+
+            }
+            &:hover .menu__prix {
+                animation:prixmove 300ms linear;
+                animation-fill-mode: both;
+            }
+        
+            
+        }
+        @include menuitemanimation;
+
+        
+    }
+
+    &__section
+    {
+        border-bottom: 2px solid $color-tertiare;
+        width: 50px;
+        margin-left: 39%;
+        &__platmargin
+        {
+            margin-left: 0%;
+        }
+        &__dessertmargin
+        {
+            margin-right: -1%;
+        }
+
+
+    }
+}
+}
