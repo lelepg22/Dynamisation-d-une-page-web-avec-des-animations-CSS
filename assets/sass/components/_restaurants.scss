@@ -1,4 +1,3 @@
-@media screen and (max-width:1366px) {
 .imgrestomenu
 {
 max-width: 27%;
@@ -9,6 +8,11 @@ border-radius: 25px;
 box-shadow: $box-shadow;
 }
 
+#logorest{
+margin-left:1%;
+margin-top: 1%;
+width: 14%;
+}
 
 
 .tmenusection
@@ -226,7 +230,7 @@ align-items: center;
 }
 
 }
-}
+
 
 @media screen and (min-width:1368px) {
 .imgrestomenu
@@ -455,5 +459,9 @@ align-items: center;
 
 
     }
+}
+
+@media screen and (min-width:720px) and (max-width:1366px)
+{
 }
 }
