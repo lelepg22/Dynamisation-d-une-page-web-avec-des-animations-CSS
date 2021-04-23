@@ -23,7 +23,7 @@ main
     animation-delay: 3s;
 }
 
-@media screen and (max-width:719px) {
+
 body{
     margin: unset;
 }
@@ -96,10 +96,6 @@ padding-top: 21px;
 padding-bottom: 19px;
 }
 
-
- 
-
-}
 #logo
 {
 margin-left:1%;
@@ -259,10 +255,13 @@ margin: 3%;
     flex-direction: column;
     margin-left: 5%;
     align-items: flex-start;
+    font-size: 5vw;
+    margin-top: -1%;
 }
 &__newtag
 {
   @include newtag;
+    position: absolute;
     right: 14px;
     top: 0px;
 }
@@ -272,20 +271,20 @@ margin: 3%;
 .like
 {
 
-font-size: 1.5em;    
+font-size: 6.5vw;    
 color: black;    
    
 }
 .likeaccueil
 {
-@include likeaccueil;
+    position: absolute;
     right: 20px;
     bottom: 41px;
 }
 
 .likefill
 {
-font-size: 1.5em;
+font-size: 6.5vw;
 position: absolute;
 right: 20px;
 bottom: 41px; 
@@ -356,14 +355,7 @@ margin-right: 13px;
             overflow:hidden;
             white-space:nowrap; 
             max-width: 100%;
-    }
-    .animmain
-    {
-        opacity: 0;        
-        animation:loadmain 0.2s; 
-        animation-fill-mode: forwards;
-        animation-delay: 3s;
-    }
+    }    
 
     h1
     {
@@ -372,10 +364,7 @@ margin-right: 13px;
 
     a
     {
-    &:link 
-    {
-        text-decoration: none;    
-    }
+    
     &:visited
     {
         text-decoration: none;     
@@ -388,24 +377,12 @@ margin-right: 13px;
     }
 
     .buttons
-    {
-        background-color: $color-secondaire;
-        color: $color-blanc;
-        width: fit-content;
-        padding: 14px;
-        border-radius: 25px;
-        transition: background-color 400ms, box-shadow 350ms;
-            &:hover{
-            @include buttoneffect;
-            }
+    {      
+        &:hover{
+        @include buttoneffect;
+        }
 
-    }
-    #hed
-    {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom:-1%;
-    }
+    }   
 
     #locali
     {
@@ -420,13 +397,19 @@ margin-right: 13px;
         border-radius: 25px;
         margin-right: 2%; 
         @include box-shadow; 
+        position: absolute;
+        left: 78%;
+        top: 4px; 
+        font-size: 1em;
+        padding-top: 2px;
+        padding-bottom:2px  
         
     }
     #logo
     {
         margin-left:1%;
-        margin-top: 1%;
-        width: unset;
+        margin-top: -1%;
+        width: 14%;
         position: unset;
     }
     .iconloc
@@ -436,21 +419,13 @@ margin-right: 13px;
 
 
     #topheader
-    {
-        background-color: $color-grisclaire;
-        text-align: center;
+    {        
         padding-bottom: 2%;
         border-radius: 78px;
-        width: 32%;
-        display: flex;
-        flex-direction: column;
+        width: 32%;        
         margin-left: 33%;
-        margin-top: -4%;
-        align-items: center;
-        font-size: unset;
-        & h2{
-        margin-bottom: -1%;
-        }
+        margin-top: -4%;        
+        font-size: unset;       
          & a {
         font-size: unset;
         padding: 2.8%;
@@ -462,12 +437,8 @@ margin-right: 13px;
 
 
     .bottomheader
-    {
-        display:flex;
-        flex-direction: row;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+    {        
+        flex-direction: row;       
         margin-bottom: 2%;
         padding-bottom: unset;
         & h2{
@@ -525,13 +496,7 @@ margin-right: 13px;
     }
 
     .restaurantsaccueil
-    {
-        background-color: $color-grisclaire;
-        text-align:center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap:wrap;
+    {        
         justify-content: center;        
     }
 
@@ -543,24 +508,11 @@ margin-right: 13px;
     }
 
     .restaurants
-    {
-        border-radius: 30px;
-        background-color:$color-blanc;
-        width: 33%;
-        margin-bottom: 1%;
-        padding-bottom: 1%;
-        display: flex;
-        justify-content: center;
-        position: relative;
+    {        
+        width: 33%;          
         max-height: 467px;
-        margin:1%;
-        @include box-shadow;
-
-        &__nomresto
-        {
-            font-weight: bolder;
-            margin-bottom: -3px;    
-        }
+        margin:1%;  
+       
         &__tfoto 
         {
             width: 94%;           
@@ -569,14 +521,14 @@ margin-right: 13px;
             margin-top: unset;
         }
         &__etiquettenomvil
-        {
-            color: black;
+        {            
             display: unset;            
-            margin-left: unset;            
+            margin-left: unset;
+            font-size: unset;            
         }
         &__newtag
-        {
-        @include newtag;
+        {        
+        position: absolute;
         right: 45px;
         top: 18px;
         }
@@ -586,13 +538,11 @@ margin-right: 13px;
     .like
     {
         
-        font-size: 1.4em;    
-        color: black;    
+        font-size: 1.4em;           
         
     }
     .likeaccueil
-    {
-        @include likeaccueil;
+    {        
         right: 51px;
         bottom: 34px;
     }
@@ -602,8 +552,8 @@ margin-right: 13px;
         font-size: 1.4em;
         position: absolute;
         right: 51px;
-        bottom: 34px;  
-        @include heartfill;
+        bottom: 34px; 
+        
     }
     .likefillmenu
     {
@@ -611,40 +561,24 @@ margin-right: 13px;
     }
 
     footer
-    {
-        background-color:#333132;
-        color: $color-blanc;
-        display: flex;
+    {       
         flex-direction: row;
     }
     li
     {
         margin-bottom: unset;
     }
-    #afoot
-    {
-        color: $color-blanc;
-    }
+   
 
     #logofooter
-    {
-        filter: invert(98%) sepia(7%) saturate(297%) hue-rotate(190deg) brightness(119%) contrast(100%);
+    {        
         margin-left: 1%;        
         padding-top: unset;
         width: unset;
     }
-    #lienf
-    {
-        text-decoration: none;
-        color: $color-blanc;
-    }
+    
     #footerul
-    {
-        display: flex;
-        width: 79%;
-        justify-content: space-between;
-        padding-top: 1%;
-        padding-bottom: 1%;
+    {     
         flex-direction: row;
         font-size: unset;
     }    
@@ -653,7 +587,7 @@ margin-right: 13px;
         margin-right: 13px;
     }
 
-    @include loadpage;
+    
     }
 
     @media screen and (min-width:720px) and (max-width:1366px)
@@ -663,14 +597,7 @@ margin-right: 13px;
             overflow:hidden;
             white-space:nowrap; 
             max-width: 100%;
-    }
-    .animmain
-    {
-        opacity: 0;        
-        animation:loadmain 0.2s; 
-        animation-fill-mode: forwards;
-        animation-delay: 3s;
-    }
+    }    
 
     h1
     {
@@ -678,15 +605,12 @@ margin-right: 13px;
     }
 
     a
-    {
-    &:link 
-    {
-        text-decoration: none;    
-    }
+    {    
     &:visited
     {
         text-decoration: none;     
     }
+
     }
 
     ul
@@ -695,70 +619,48 @@ margin-right: 13px;
     }
 
     .buttons
-    {
-        background-color: $color-secondaire;
-        color: $color-blanc;
-        width: fit-content;
-        padding: 14px;
-        border-radius: 25px;
-        transition: background-color 400ms, box-shadow 350ms;
+    {        
             &:hover{
             @include buttoneffect;
             }
-
-    }
-    #hed
-    {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom:-1%;
-    }
+    }   
 
     #locali
-    {
-        background-color:#ebebeb;
-        border-top:2px groove $color-secondaire;
-        font-weight: bolder;
-        height: 51px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 193px; 
+    {        
+        border-top:2px groove $color-secondaire;        
+        height: 51px;        
+        width: 22%; 
+        font-size: unset;
+        padding-top: 2px;
+        padding-bottom: 2px;
         border-radius: 25px;
         margin-right: 2%; 
-        @include box-shadow; 
+        @include box-shadow;
+        position: absolute;
+        left: 75%;
+        top: 4px; 
         
     }
     #logo
     {
         margin-left:1%;
         margin-top: 1%;
-        width: unset;
+        width: 22%;
         position: unset;
-    }
-    .iconloc
-    {
-        margin-right: 2%;
-    }
+    }   
 
 
     #topheader
-    {
-        background-color: $color-grisclaire;
-        text-align: center;
+    {        
+        
         padding-bottom: 2%;
         border-radius: 78px;
-        width: 32%;
-        display: flex;
-        flex-direction: column;
+        width: 32%;            
         margin-left: 33%;
-        margin-top: -77px;
-        margin-bottom: 1%;
-        align-items: center;
+        margin-top: -51px;
+        margin-bottom: 1%;        
         font-size: unset;
-        & h2{
-        margin-bottom: -1%;
-        }
+        
          & a {
         font-size: unset;
         padding: 2.8%;
@@ -771,41 +673,32 @@ margin-right: 13px;
 
     .bottomheader
     {
-        display:flex;
-        flex-direction: row;
-        align-content: center;
-        align-items: center;
+        
+        flex-direction: row;        
         justify-content: flex-start;
         margin-bottom: 2%;
         padding-bottom: unset;
         & h2{
             margin-bottom: -38.7px;
             font-size: 1.2em;  
-            margin-top: unset;   
+            margin-top: -14px;   
             margin-left: 6px;       
         }
         &__fonctionitems
         {
-            background-color: $color-grisclaire;
-            font-weight: bold;
+           
             padding-bottom: 1%;
-            margin-bottom: -1%;
-            text-align: center;
-            width: 23%;
-            display: flex;
+            margin-bottom: -1%;           
+            width: 23%;            
             font-size: 1em;
             justify-content: center; 
-            align-items: center;
-            padding-right: 1%;
+            align-items: center;            
             padding-top: 1%;
             border-radius: 25px;            
             margin-right: unset;
-            margin-left: 4%;  
-            position: relative;
-            @include box-shadow;
+            margin-left: 4%;                      
             &__iconfon
-            {
-            color:#8b8b8b;
+            {            
             margin-left: 26px;
             font-size: 1em;
             padding-right: 7px;
@@ -814,19 +707,12 @@ margin-right: 13px;
             left: -2px;
             }  
             &__roundfun
-            {
-                background-color:$color-primaire;
-                color:$color-blanc;
-                border-radius: 30px;
-                width: 20px;
-                display: inline-flex;
+            {                    
+                width: 20px;                
                 font-size: 0.7em;
-                height: 19px;
-                align-items: center;
-                justify-content: center;
+                height: 19px;               
                 position: absolute;
-                left: -19px;
-            
+                left: -19px;            
             }
         }
         
@@ -834,42 +720,21 @@ margin-right: 13px;
     }
 
     .restaurantsaccueil
-    {
-        background-color: $color-grisclaire;
-        text-align:center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap:wrap;
+    {   
         justify-content: center;        
     }
 
     #restaut
-    {
-        padding-top: 1%;
-        width: 100%; 
+    {      
         margin-left: unset;      
     }
 
     .restaurants
     {
-        border-radius: 30px;
-        background-color:$color-blanc;
-        width: 33%;
-        margin-bottom: 1%;
-        padding-bottom: 1%;
-        display: flex;
-        justify-content: center;
-        position: relative;
+        width: 33%;        
         max-height: 302px;
-        margin:2%;
-        @include box-shadow;
-
-        &__nomresto
-        {
-            font-weight: bolder;
-            margin-bottom: -3px;    
-        }
+        margin:2%;    
+       
         &__tfoto 
         {
             width: 94%;           
@@ -878,14 +743,14 @@ margin-right: 13px;
             margin-top: unset;
         }
         &__etiquettenomvil
-        {
-            color: black;
+        {          
+            font-size: unset;  
             display: unset;            
             margin-left: unset;            
         }
         &__newtag
-        {
-        @include newtag;
+        {       
+        position: absolute;
         right: 29px;
         top: 11px;
         }
@@ -893,67 +758,47 @@ margin-right: 13px;
     }
 
     .like
-    {
-        
-        font-size: 1.4em;    
-        color: black;    
-        
+    {        
+        font-size: 1.4em;        
     }
+
     .likeaccueil
-    {
-        @include likeaccueil;
+    {        
         right: 18px;
         bottom: 26px;
     }
 
     .likefill
     {
-        font-size: 1.4em;
-        position: absolute;
+        font-size: 1.4em;        
         right: 18px;
-        bottom: 26px; 
-        @include heartfill;
+        bottom: 26px;        
     }
+
     .likefillmenu
     {
         @include heartfill;
     }
 
     footer
-    {
-        background-color:#333132;
-        color: $color-blanc;
-        display: flex;
+    {     
         flex-direction: row;
     }
     li
     {
         margin-bottom: unset;
-    }
-    #afoot
-    {
-        color: $color-blanc;
-    }
+    } 
 
     #logofooter
     {
-        filter: invert(98%) sepia(7%) saturate(297%) hue-rotate(190deg) brightness(119%) contrast(100%);
         margin-left: 1%;        
         padding-top: unset;
         width: 19%;
     }
-    #lienf
-    {
-        text-decoration: none;
-        color: $color-blanc;
-    }
+  
     #footerul
-    {
-        display: flex;
-        width: 74%;
-        justify-content: space-between;
-        padding-top: 1%;
-        padding-bottom: 1%;
+    {        
+        width: 74%;       
         margin-left: -23px;
         flex-direction: row;
         font-size: 0.94em;
@@ -963,7 +808,7 @@ margin-right: 13px;
         margin-right: 1px;
     }
 
-    @include loadpage;
+    
     }
     
     

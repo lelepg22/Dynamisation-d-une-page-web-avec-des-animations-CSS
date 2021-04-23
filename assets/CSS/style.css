@@ -126,70 +126,69 @@ main {
   animation-delay: 3s;
 }
 
-@media screen and (max-width: 719px) {
-  body {
-    margin: unset;
-  }
-
-  .animmain {
-    opacity: 0;
-    animation: loadmain 0.2s;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-  }
-
-  h1 {
-    font-family: "Shrikhand", cursive;
-  }
-
-  a:link {
-    text-decoration: none;
-  }
-  a:visited {
-    text-decoration: none;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  .buttons {
-    background-color: #FF79DA;
-    color: #ffffff;
-    width: fit-content;
-    padding: 14px;
-    border-radius: 25px;
-    transition: background-color 400ms, box-shadow 350ms;
-    margin-top: 2%;
-  }
-  .buttons:hover {
-    background-color: #ff93e1;
-    box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
-  }
-
-  #hed {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: -1%;
-    padding-top: 3%;
-  }
-
-  #locali {
-    background-color: #ebebeb;
-    border-top: 4px outset #d4d4d4;
-    font-weight: bolder;
-    height: unset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 3.8vw;
-    margin-bottom: 1%;
-    padding-top: 21px;
-    padding-bottom: 19px;
-  }
+body {
+  margin: unset;
 }
+
+.animmain {
+  opacity: 0;
+  animation: loadmain 0.2s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.buttons {
+  background-color: #FF79DA;
+  color: #ffffff;
+  width: fit-content;
+  padding: 14px;
+  border-radius: 25px;
+  transition: background-color 400ms, box-shadow 350ms;
+  margin-top: 2%;
+}
+.buttons:hover {
+  background-color: #ff93e1;
+  box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
+}
+
+#hed {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: -1%;
+  padding-top: 3%;
+}
+
+#locali {
+  background-color: #ebebeb;
+  border-top: 4px outset #d4d4d4;
+  font-weight: bolder;
+  height: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 3.8vw;
+  margin-bottom: 1%;
+  padding-top: 21px;
+  padding-bottom: 19px;
+}
+
 #logo {
   margin-left: 1%;
   margin-top: 1%;
@@ -328,6 +327,8 @@ main {
   flex-direction: column;
   margin-left: 5%;
   align-items: flex-start;
+  font-size: 5vw;
+  margin-top: -1%;
 }
 .restaurants__newtag {
   background-color: #99E2D0;
@@ -338,15 +339,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   padding-left: 6px;
   padding-right: 6px;
+  position: absolute;
   right: 14px;
   top: 0px;
 }
 
 .like {
-  font-size: 1.5em;
+  font-size: 6.5vw;
   color: black;
 }
 
@@ -357,7 +358,7 @@ main {
 }
 
 .likefill {
-  font-size: 1.5em;
+  font-size: 6.5vw;
   position: absolute;
   right: 20px;
   bottom: 41px;
@@ -474,20 +475,10 @@ li {
     max-width: 100%;
   }
 
-  .animmain {
-    opacity: 0;
-    animation: loadmain 0.2s;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-  }
-
   h1 {
     font-family: "Shrikhand", cursive;
   }
 
-  a:link {
-    text-decoration: none;
-  }
   a:visited {
     text-decoration: none;
   }
@@ -496,23 +487,9 @@ li {
     list-style-type: none;
   }
 
-  .buttons {
-    background-color: #FF79DA;
-    color: #ffffff;
-    width: fit-content;
-    padding: 14px;
-    border-radius: 25px;
-    transition: background-color 400ms, box-shadow 350ms;
-  }
   .buttons:hover {
     background-color: #ff93e1;
     box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
-  }
-
-  #hed {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: -1%;
   }
 
   #locali {
@@ -527,12 +504,18 @@ li {
     border-radius: 25px;
     margin-right: 2%;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 78%;
+    top: 4px;
+    font-size: 1em;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   #logo {
     margin-left: 1%;
-    margin-top: 1%;
-    width: unset;
+    margin-top: -1%;
+    width: 14%;
     position: unset;
   }
 
@@ -541,21 +524,13 @@ li {
   }
 
   #topheader {
-    background-color: #f6f6f6;
-    text-align: center;
     padding-bottom: 2%;
     border-radius: 78px;
     width: 32%;
-    display: flex;
-    flex-direction: column;
     margin-left: 33%;
     margin-top: -4%;
-    align-items: center;
     font-size: unset;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
-  }
-  #topheader h2 {
-    margin-bottom: -1%;
   }
   #topheader a {
     font-size: unset;
@@ -563,11 +538,7 @@ li {
   }
 
   .bottomheader {
-    display: flex;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 2%;
     padding-bottom: unset;
   }
@@ -619,12 +590,6 @@ li {
   }
 
   .restaurantsaccueil {
-    background-color: #f6f6f6;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -635,21 +600,9 @@ li {
   }
 
   .restaurants {
-    border-radius: 30px;
-    background-color: #ffffff;
     width: 33%;
-    margin-bottom: 1%;
-    padding-bottom: 1%;
-    display: flex;
-    justify-content: center;
-    position: relative;
     max-height: 467px;
     margin: 1%;
-    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
-  }
-  .restaurants__nomresto {
-    font-weight: bolder;
-    margin-bottom: -3px;
   }
   .restaurants__tfoto {
     width: 94%;
@@ -658,33 +611,21 @@ li {
     margin-top: unset;
   }
   .restaurants__etiquettenomvil {
-    color: black;
     display: unset;
     margin-left: unset;
+    font-size: unset;
   }
   .restaurants__newtag {
-    background-color: #99E2D0;
-    color: #008866;
-    font-weight: bold;
-    width: fit-content;
-    height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    padding-left: 6px;
-    padding-right: 6px;
     right: 45px;
     top: 18px;
   }
 
   .like {
     font-size: 1.4em;
-    color: black;
   }
 
   .likeaccueil {
-    position: absolute;
     right: 51px;
     bottom: 34px;
   }
@@ -694,13 +635,6 @@ li {
     position: absolute;
     right: 51px;
     bottom: 34px;
-    color: #9356DC;
-    transform-origin: bottom;
-    opacity: 0;
-  }
-  .likefill:hover {
-    animation: filllike 500ms ease-in;
-    animation-fill-mode: both;
   }
 
   .likefillmenu {
@@ -714,9 +648,6 @@ li {
   }
 
   footer {
-    background-color: #333132;
-    color: #ffffff;
-    display: flex;
     flex-direction: row;
   }
 
@@ -724,75 +655,19 @@ li {
     margin-bottom: unset;
   }
 
-  #afoot {
-    color: #ffffff;
-  }
-
   #logofooter {
-    filter: invert(98%) sepia(7%) saturate(297%) hue-rotate(190deg) brightness(119%) contrast(100%);
     margin-left: 1%;
     padding-top: unset;
     width: unset;
   }
 
-  #lienf {
-    text-decoration: none;
-    color: #ffffff;
-  }
-
   #footerul {
-    display: flex;
-    width: 79%;
-    justify-content: space-between;
-    padding-top: 1%;
-    padding-bottom: 1%;
     flex-direction: row;
     font-size: unset;
   }
 
   .footicon {
     margin-right: 13px;
-  }
-
-  .lds-ring {
-    display: inline-block;
-    position: fixed;
-    width: 80px;
-    height: 80px;
-    top: 41%;
-    left: 45%;
-  }
-
-  .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin: 8px;
-    border: 8px solid #9356DC;
-    border-radius: 50%;
-    animation: lds-ring 3.89s cubic-bezier(0.5, 0, 0.5, 1);
-    animation-fill-mode: forwards;
-    border-color: #9356DC transparent transparent transparent;
-  }
-
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-
-  .lds-ring p {
-    padding-top: 38%;
-    margin-left: 39%;
-    font-weight: bolder;
   }
 }
 @media screen and (min-width: 720px) and (max-width: 1366px) {
@@ -803,20 +678,10 @@ li {
     max-width: 100%;
   }
 
-  .animmain {
-    opacity: 0;
-    animation: loadmain 0.2s;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-  }
-
   h1 {
     font-family: "Shrikhand", cursive;
   }
 
-  a:link {
-    text-decoration: none;
-  }
   a:visited {
     text-decoration: none;
   }
@@ -825,67 +690,42 @@ li {
     list-style-type: none;
   }
 
-  .buttons {
-    background-color: #FF79DA;
-    color: #ffffff;
-    width: fit-content;
-    padding: 14px;
-    border-radius: 25px;
-    transition: background-color 400ms, box-shadow 350ms;
-  }
   .buttons:hover {
     background-color: #ff93e1;
     box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
   }
 
-  #hed {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: -1%;
-  }
-
   #locali {
-    background-color: #ebebeb;
     border-top: 2px groove #FF79DA;
-    font-weight: bolder;
     height: 51px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 193px;
+    width: 22%;
+    font-size: unset;
+    padding-top: 2px;
+    padding-bottom: 2px;
     border-radius: 25px;
     margin-right: 2%;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 75%;
+    top: 4px;
   }
 
   #logo {
     margin-left: 1%;
     margin-top: 1%;
-    width: unset;
+    width: 22%;
     position: unset;
   }
 
-  .iconloc {
-    margin-right: 2%;
-  }
-
   #topheader {
-    background-color: #f6f6f6;
-    text-align: center;
     padding-bottom: 2%;
     border-radius: 78px;
     width: 32%;
-    display: flex;
-    flex-direction: column;
     margin-left: 33%;
-    margin-top: -77px;
+    margin-top: -51px;
     margin-bottom: 1%;
-    align-items: center;
     font-size: unset;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
-  }
-  #topheader h2 {
-    margin-bottom: -1%;
   }
   #topheader a {
     font-size: unset;
@@ -893,10 +733,7 @@ li {
   }
 
   .bottomheader {
-    display: flex;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
     justify-content: flex-start;
     margin-bottom: 2%;
     padding-bottom: unset;
@@ -904,30 +741,22 @@ li {
   .bottomheader h2 {
     margin-bottom: -38.7px;
     font-size: 1.2em;
-    margin-top: unset;
+    margin-top: -14px;
     margin-left: 6px;
   }
   .bottomheader__fonctionitems {
-    background-color: #f6f6f6;
-    font-weight: bold;
     padding-bottom: 1%;
     margin-bottom: -1%;
-    text-align: center;
     width: 23%;
-    display: flex;
     font-size: 1em;
     justify-content: center;
     align-items: center;
-    padding-right: 1%;
     padding-top: 1%;
     border-radius: 25px;
     margin-right: unset;
     margin-left: 4%;
-    position: relative;
-    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
   }
   .bottomheader__fonctionitems__iconfon {
-    color: #8b8b8b;
     margin-left: 26px;
     font-size: 1em;
     padding-right: 7px;
@@ -936,51 +765,25 @@ li {
     left: -2px;
   }
   .bottomheader__fonctionitems__roundfun {
-    background-color: #9356DC;
-    color: #ffffff;
-    border-radius: 30px;
     width: 20px;
-    display: inline-flex;
     font-size: 0.7em;
     height: 19px;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     left: -19px;
   }
 
   .restaurantsaccueil {
-    background-color: #f6f6f6;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   #restaut {
-    padding-top: 1%;
-    width: 100%;
     margin-left: unset;
   }
 
   .restaurants {
-    border-radius: 30px;
-    background-color: #ffffff;
     width: 33%;
-    margin-bottom: 1%;
-    padding-bottom: 1%;
-    display: flex;
-    justify-content: center;
-    position: relative;
     max-height: 302px;
     margin: 2%;
-    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
-  }
-  .restaurants__nomresto {
-    font-weight: bolder;
-    margin-bottom: -3px;
   }
   .restaurants__tfoto {
     width: 94%;
@@ -989,49 +792,29 @@ li {
     margin-top: unset;
   }
   .restaurants__etiquettenomvil {
-    color: black;
+    font-size: unset;
     display: unset;
     margin-left: unset;
   }
   .restaurants__newtag {
-    background-color: #99E2D0;
-    color: #008866;
-    font-weight: bold;
-    width: fit-content;
-    height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    padding-left: 6px;
-    padding-right: 6px;
     right: 29px;
     top: 11px;
   }
 
   .like {
     font-size: 1.4em;
-    color: black;
   }
 
   .likeaccueil {
-    position: absolute;
     right: 18px;
     bottom: 26px;
   }
 
   .likefill {
     font-size: 1.4em;
-    position: absolute;
     right: 18px;
     bottom: 26px;
-    color: #9356DC;
-    transform-origin: bottom;
-    opacity: 0;
-  }
-  .likefill:hover {
-    animation: filllike 500ms ease-in;
-    animation-fill-mode: both;
   }
 
   .likefillmenu {
@@ -1045,9 +828,6 @@ li {
   }
 
   footer {
-    background-color: #333132;
-    color: #ffffff;
-    display: flex;
     flex-direction: row;
   }
 
@@ -1055,28 +835,14 @@ li {
     margin-bottom: unset;
   }
 
-  #afoot {
-    color: #ffffff;
-  }
-
   #logofooter {
-    filter: invert(98%) sepia(7%) saturate(297%) hue-rotate(190deg) brightness(119%) contrast(100%);
     margin-left: 1%;
     padding-top: unset;
     width: 19%;
   }
 
-  #lienf {
-    text-decoration: none;
-    color: #ffffff;
-  }
-
   #footerul {
-    display: flex;
     width: 74%;
-    justify-content: space-between;
-    padding-top: 1%;
-    padding-bottom: 1%;
     margin-left: -23px;
     flex-direction: row;
     font-size: 0.94em;
@@ -1084,47 +850,6 @@ li {
 
   .footicon {
     margin-right: 1px;
-  }
-
-  .lds-ring {
-    display: inline-block;
-    position: fixed;
-    width: 80px;
-    height: 80px;
-    top: 41%;
-    left: 45%;
-  }
-
-  .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin: 8px;
-    border: 8px solid #9356DC;
-    border-radius: 50%;
-    animation: lds-ring 3.89s cubic-bezier(0.5, 0, 0.5, 1);
-    animation-fill-mode: forwards;
-    border-color: #9356DC transparent transparent transparent;
-  }
-
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-
-  .lds-ring p {
-    padding-top: 38%;
-    margin-left: 39%;
-    font-weight: bolder;
   }
 }
 @media screen and (max-width: 1366px) {
