@@ -14,7 +14,7 @@
 </head>
 
 <body> 
-	<div class="lds-ring"><div></div><div></div><div></div><div></div><p>Loading</p></div>
+	<div class="lds-ring"><div></div><div></div><div></div><div></div><p id="load">Loading</p></div>
 	
 	<main class="animmain">
 		
@@ -47,10 +47,8 @@
 
 				<div class="restaurants">
 
-					<a href="html/lapalettedugout.html">
-						<div><p class="restaurants__newtag"> Nouveau</p></div>
-					<div><img src="assets/images/restaurants/lapalette.jpg" alt="Image plate la palette" class="restaurants__tfoto">
-					</div>
+					<a href="html/lapalettedugout.html"><img src="assets/images/restaurants/lapalette.jpg" alt="Image plate la palette" class="restaurants__tfoto">
+						<p class="restaurants__newtag"> Nouveau</p>					
 						<div class="restaurants__etiquetteresto">						
 							<div class="restaurants__etiquettenomvil">
 								<p class="restaurants__nomresto"> La palette du goût </p>						
@@ -111,9 +109,9 @@
 			<img src="assets/images/logo/ohmyfood.svg" alt="Logo OHMYFOOD" id="logofooter"> 
 			
 			<ul id="footerul">
-				<li><a href="index.html"><i class="fas fa-utensils footicon"></i> Proposer un restaurant</a> </li>
-				<li><a href="index.html"><i class="fas fa-hands-helping footicon"></i> Devenir partenaire</a></li>
-				<li><a href="index.html" id="afoot">Mentions légales</a></li>
+				<li><a href="index.html" class="afoot"><i class="fas fa-utensils footicon"></i> Proposer un restaurant</a> </li>
+				<li><a href="index.html" class="afoot"><i class="fas fa-hands-helping footicon"></i> Devenir partenaire</a></li>
+				<li><a href="index.html" class="afoot">Mentions légales</a></li>
 				<li><a href="mailto:oh@myfood.com" id="lienf">Contact</a></li>
 			</ul>
 

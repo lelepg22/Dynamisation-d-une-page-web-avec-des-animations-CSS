@@ -8,9 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 45px;
-    top: 18px;
+    position: absolute;   
     padding-left: 6px;
     padding-right: 6px;
 }
@@ -68,9 +66,7 @@
 
 @mixin likeaccueil
 {
-    position: absolute;
-    right: 51px;
-    bottom: 34px;  
+    position: absolute;    
 }
 
 @mixin heartfill

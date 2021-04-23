@@ -15,14 +15,24 @@ main
     max-width: 100%;
 }
 
-@media screen and (max-width:1366px) {
+#load
+{
+    opacity: 0;
+    animation:load 0.2s;
+    animation-fill-mode: backwards;
+    animation-delay: 3s;
+}
+
+@media screen and (max-width:719px) {
+body{
+    margin: unset;
+}
 .animmain
 {
 opacity: 0;        
 animation:loadmain 0.2s; 
 animation-fill-mode: forwards;
 animation-delay: 3s;
-;
 }
 
 h1
@@ -67,23 +77,23 @@ display: flex;
 justify-content: space-between;
 flex-direction: column;
 margin-bottom:-1%;
+padding-top: 3%;
 }
 
 #locali
 {
 background-color:#ebebeb;
-border-top:2px groove $color-secondaire;
+border-top:4px outset $color-grisopac;
 font-weight: bolder;
-height: 57px;
+height: unset;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 100%;
-margin-right: 2%; 
+width: 100%; 
 font-size: 3.8vw;
 margin-bottom: 1%;
 padding-top: 21px;
-padding-bottom: 30px;
+padding-bottom: 19px;
 }
 
 
@@ -108,11 +118,11 @@ margin-right: 2%;
 {
 background-color: $color-grisclaire;
 text-align: center;
-padding-bottom: 2%;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 28px;
+padding: 24px;
+padding-bottom: 16%;
 font-size: $font-size-titrer;
 & h2{
     margin-bottom: -1%;
@@ -133,46 +143,60 @@ align-content: center;
 align-items: center;
 justify-content: center;
 margin-bottom: 2%;
+padding-bottom: 9%;
 & h2{
     margin-top: 9%;
-    font-size: $font-size-titrer;
-    margin-left: -61%;
+    font-size: 6.2vw;
+    margin-left: -46%;
+    
 }
 &__fonctionitems
 {
     background-color: $color-grisclaire;
     font-weight: bold;
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding-bottom: 7%;
+    padding-top: 7%;
     padding-right: 1%;
-    margin-bottom: -1%;
+    margin-bottom: 2%;
     text-align: center;
-    width: 95%;
+    width: 88%;
     display: flex;
-    justify-content: center; 
+    justify-content: flex-start; 
     font-size: $font-size-textr;     
-    border-radius: 55px;
-    margin-left: 3%;  
+    border-radius: 14px;
+    margin-left: 3%; 
+    margin-right: 1%; 
     position: relative;
     @include box-shadow;
+    &:hover
+    {
+        background-color: lighten($color-primaire, 36);       
+    }
+    &:hover i 
+    {
+        color: $color-primaire;
+    }
     &__iconfon
     {
        color:#8b8b8b;
-       margin-left: 11%; 
+       margin-left: 14%;
+       padding-right: 12%;
+       font-size: 5vw;
     }  
+
     &__roundfun
     {
         background-color:$color-primaire;
         color:$color-blanc;
         border-radius: 30px;
-        width: 3%;
+        width: 4%;
         display: inline-flex;
         font-size: $font-size-textr*0.7;        
         align-items: center;
         justify-content: center;
         position: absolute;
-        left: -19px;
-        padding: 1%;
+        left: -3%;
+        padding: 2%;
     
     }
 }
@@ -188,27 +212,29 @@ display: flex;
 flex-direction: row;
 align-items: center;
 flex-wrap:wrap;
-justify-content: center;
+justify-content: flex-start;
+padding-bottom: 18px;
 }
 
 #restaut
 {
    padding-top: 1%;
-   width: 100%;       
+   width: 100%;   
+   margin-left: -27%;    
 }
 
 .restaurants
 {
 border-radius: 30px;
 background-color:$color-blanc;
-width: 33%;
+width: 100%;
 margin-bottom: 1%;
 padding-bottom: 1%;
 display: flex;
 justify-content: center;
 position: relative;
-max-height: 467px;
-margin:1%;
+height: 73vw;
+margin: 3%;
 @include box-shadow;
 
 &__nomresto
@@ -218,18 +244,27 @@ margin:1%;
 }
 &__tfoto 
 {
-    width: 90%;
+    width: 100%;
     padding-top: 3%;
-    max-height: 81%;
+    height: 67%;
     object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -3%;
 }
 &__etiquettenomvil
 {
     color: black;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    align-items: flex-start;
 }
 &__newtag
 {
   @include newtag;
+    right: 14px;
+    top: 0px;
 }
 
 }
@@ -237,21 +272,23 @@ margin:1%;
 .like
 {
 
-font-size: 1.4em;    
+font-size: 1.5em;    
 color: black;    
    
 }
 .likeaccueil
 {
 @include likeaccueil;
+    right: 20px;
+    bottom: 41px;
 }
 
 .likefill
 {
-font-size: 1.4em;
+font-size: 1.5em;
 position: absolute;
-right: 51px;
-bottom: 34px;  
+right: 20px;
+bottom: 41px; 
 @include heartfill;
 }
 .likefillmenu
@@ -264,8 +301,15 @@ footer
 background-color:#333132;
 color: $color-blanc;
 display: flex;
+flex-direction: column;
 }
-#afoot
+
+a:visited
+{
+    color: $color-blanc;
+}
+
+.afoot
 {
 color: $color-blanc;
 }
@@ -273,7 +317,9 @@ color: $color-blanc;
 #logofooter
 {
 filter: invert(98%) sepia(7%) saturate(297%) hue-rotate(190deg) brightness(119%) contrast(100%);
-margin-left: 1%;
+margin-left: 11%;
+padding-top: 6%;
+width: 26%;
 }
 #lienf
 {
@@ -287,6 +333,12 @@ width: 79%;
 justify-content: space-between;
 padding-top: 1%;
 padding-bottom: 1%;
+flex-direction: column;
+font-size:$font-size-textr;
+}
+li
+{
+    margin-bottom: 2%;
 }
 .footicon
 {
@@ -417,8 +469,9 @@ margin-right: 13px;
         align-items: center;
         justify-content: center;
         margin-bottom: 2%;
+        padding-bottom: unset;
         & h2{
-            margin-bottom: -8.7px;
+            margin-bottom: -38.7px;
             font-size: 1.4em;  
             margin-top: unset;   
             margin-left: unset;       
@@ -430,20 +483,26 @@ margin-right: 13px;
             padding-bottom: 1%;
             margin-bottom: -1%;
             text-align: center;
-            width: 12%;
+            width: 16%;            
             display: flex;
             font-size: 1em;
-            justify-content: space-between; 
-            padding-right: 1%;
+            justify-content: unset; 
+            align-items: center;
+            padding-right: 0;
             padding-top: 1%;
-            border-radius: 25px;
-            margin-left: 3%;  
+            padding-left: 36px;
+            border-radius: 25px;            
+            margin-right: unset;  
             position: relative;
             @include box-shadow;
             &__iconfon
             {
             color:#8b8b8b;
-            margin-left: 11%; 
+            margin-left: unset;
+            font-size: 1.3vw;
+            position: relative;            
+            left: 3px;
+            padding-right:10%;
             }  
             &__roundfun
             {
@@ -473,13 +532,14 @@ margin-right: 13px;
         flex-direction: row;
         align-items: center;
         flex-wrap:wrap;
-        justify-content: center;
+        justify-content: center;        
     }
 
     #restaut
     {
         padding-top: 1%;
-        width: 100%;       
+        width: 100%; 
+        margin-left: unset;      
     }
 
     .restaurants
@@ -503,18 +563,22 @@ margin-right: 13px;
         }
         &__tfoto 
         {
-            width: 90%;
-            padding-top: 3%;
-            max-height: 81%;
-            object-fit: cover;
+            width: 94%;           
+            max-height: 87%;           
+            height: 81%;
+            margin-top: unset;
         }
         &__etiquettenomvil
         {
             color: black;
+            display: unset;            
+            margin-left: unset;            
         }
         &__newtag
         {
         @include newtag;
+        right: 45px;
+        top: 18px;
         }
         
     }
@@ -529,6 +593,8 @@ margin-right: 13px;
     .likeaccueil
     {
         @include likeaccueil;
+        right: 51px;
+        bottom: 34px;
     }
 
     .likefill
@@ -549,6 +615,11 @@ margin-right: 13px;
         background-color:#333132;
         color: $color-blanc;
         display: flex;
+        flex-direction: row;
+    }
+    li
+    {
+        margin-bottom: unset;
     }
     #afoot
     {
@@ -558,7 +629,9 @@ margin-right: 13px;
     #logofooter
     {
         filter: invert(98%) sepia(7%) saturate(297%) hue-rotate(190deg) brightness(119%) contrast(100%);
-        margin-left: 1%;
+        margin-left: 1%;        
+        padding-top: unset;
+        width: unset;
     }
     #lienf
     {
@@ -572,13 +645,325 @@ margin-right: 13px;
         justify-content: space-between;
         padding-top: 1%;
         padding-bottom: 1%;
-    }
+        flex-direction: row;
+        font-size: unset;
+    }    
     .footicon
     {
         margin-right: 13px;
     }
 
     @include loadpage;
-
-   
     }
+
+    @media screen and (min-width:720px) and (max-width:1366px)
+    {
+        .elips{
+            text-overflow: ellipsis;
+            overflow:hidden;
+            white-space:nowrap; 
+            max-width: 100%;
+    }
+    .animmain
+    {
+        opacity: 0;        
+        animation:loadmain 0.2s; 
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
+    }
+
+    h1
+    {
+        font-family: $font-titre;
+    }
+
+    a
+    {
+    &:link 
+    {
+        text-decoration: none;    
+    }
+    &:visited
+    {
+        text-decoration: none;     
+    }
+    }
+
+    ul
+    {
+        list-style-type: none;
+    }
+
+    .buttons
+    {
+        background-color: $color-secondaire;
+        color: $color-blanc;
+        width: fit-content;
+        padding: 14px;
+        border-radius: 25px;
+        transition: background-color 400ms, box-shadow 350ms;
+            &:hover{
+            @include buttoneffect;
+            }
+
+    }
+    #hed
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:-1%;
+    }
+
+    #locali
+    {
+        background-color:#ebebeb;
+        border-top:2px groove $color-secondaire;
+        font-weight: bolder;
+        height: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 193px; 
+        border-radius: 25px;
+        margin-right: 2%; 
+        @include box-shadow; 
+        
+    }
+    #logo
+    {
+        margin-left:1%;
+        margin-top: 1%;
+        width: unset;
+        position: unset;
+    }
+    .iconloc
+    {
+        margin-right: 2%;
+    }
+
+
+    #topheader
+    {
+        background-color: $color-grisclaire;
+        text-align: center;
+        padding-bottom: 2%;
+        border-radius: 78px;
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 33%;
+        margin-top: -77px;
+        margin-bottom: 1%;
+        align-items: center;
+        font-size: unset;
+        & h2{
+        margin-bottom: -1%;
+        }
+         & a {
+        font-size: unset;
+        padding: 2.8%;
+        }
+
+        @include box-shadow;
+       
+    }
+
+
+    .bottomheader
+    {
+        display:flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 2%;
+        padding-bottom: unset;
+        & h2{
+            margin-bottom: -38.7px;
+            font-size: 1.2em;  
+            margin-top: unset;   
+            margin-left: 6px;       
+        }
+        &__fonctionitems
+        {
+            background-color: $color-grisclaire;
+            font-weight: bold;
+            padding-bottom: 1%;
+            margin-bottom: -1%;
+            text-align: center;
+            width: 23%;
+            display: flex;
+            font-size: 1em;
+            justify-content: center; 
+            align-items: center;
+            padding-right: 1%;
+            padding-top: 1%;
+            border-radius: 25px;            
+            margin-right: unset;
+            margin-left: 4%;  
+            position: relative;
+            @include box-shadow;
+            &__iconfon
+            {
+            color:#8b8b8b;
+            margin-left: 26px;
+            font-size: 1em;
+            padding-right: 7px;
+            margin-top: unset;
+            position: relative;
+            left: -2px;
+            }  
+            &__roundfun
+            {
+                background-color:$color-primaire;
+                color:$color-blanc;
+                border-radius: 30px;
+                width: 20px;
+                display: inline-flex;
+                font-size: 0.7em;
+                height: 19px;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: -19px;
+            
+            }
+        }
+        
+        
+    }
+
+    .restaurantsaccueil
+    {
+        background-color: $color-grisclaire;
+        text-align:center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap:wrap;
+        justify-content: center;        
+    }
+
+    #restaut
+    {
+        padding-top: 1%;
+        width: 100%; 
+        margin-left: unset;      
+    }
+
+    .restaurants
+    {
+        border-radius: 30px;
+        background-color:$color-blanc;
+        width: 33%;
+        margin-bottom: 1%;
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        max-height: 302px;
+        margin:2%;
+        @include box-shadow;
+
+        &__nomresto
+        {
+            font-weight: bolder;
+            margin-bottom: -3px;    
+        }
+        &__tfoto 
+        {
+            width: 94%;           
+            max-height: 87%;           
+            height: 72%;
+            margin-top: unset;
+        }
+        &__etiquettenomvil
+        {
+            color: black;
+            display: unset;            
+            margin-left: unset;            
+        }
+        &__newtag
+        {
+        @include newtag;
+        right: 29px;
+        top: 11px;
+        }
+        
+    }
+
+    .like
+    {
+        
+        font-size: 1.4em;    
+        color: black;    
+        
+    }
+    .likeaccueil
+    {
+        @include likeaccueil;
+        right: 18px;
+        bottom: 26px;
+    }
+
+    .likefill
+    {
+        font-size: 1.4em;
+        position: absolute;
+        right: 18px;
+        bottom: 26px; 
+        @include heartfill;
+    }
+    .likefillmenu
+    {
+        @include heartfill;
+    }
+
+    footer
+    {
+        background-color:#333132;
+        color: $color-blanc;
+        display: flex;
+        flex-direction: row;
+    }
+    li
+    {
+        margin-bottom: unset;
+    }
+    #afoot
+    {
+        color: $color-blanc;
+    }
+
+    #logofooter
+    {
+        filter: invert(98%) sepia(7%) saturate(297%) hue-rotate(190deg) brightness(119%) contrast(100%);
+        margin-left: 1%;        
+        padding-top: unset;
+        width: 19%;
+    }
+    #lienf
+    {
+        text-decoration: none;
+        color: $color-blanc;
+    }
+    #footerul
+    {
+        display: flex;
+        width: 74%;
+        justify-content: space-between;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-left: -23px;
+        flex-direction: row;
+        font-size: 0.94em;
+    }    
+    .footicon
+    {
+        margin-right: 1px;
+    }
+
+    @include loadpage;
+    }
+    
+    
