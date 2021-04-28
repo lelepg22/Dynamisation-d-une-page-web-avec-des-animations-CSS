@@ -1,19 +1,18 @@
 .imgrestomenu
 {
-max-width: 27%;
-position: relative;
-bottom: 18%;   
-left: 36%;     
+margin-bottom: -7%;
+max-width: 100%;  
 border-radius: 25px;
 box-shadow: $box-shadow;
 }
 
-#logorest{
-margin-left:1%;
-margin-top: 1%;
-width: 14%;
+#logorest
+{
+    margin-left: 23%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 51%;
 }
-
 
 .tmenusection
 {
@@ -21,17 +20,19 @@ border-bottom: 2px solid $color-tertiare;
 width: 50px;
 }
 
-
 .coeurmenu
 {    
 font-size:1.2em;
 }
 
-
 .espacement
 {
 padding-top: 1%;
 margin-top: 11px;
+}
+.menu > div
+{
+    width: 100%;
 }
 .menu
 {
@@ -40,194 +41,212 @@ display: flex;
 flex-direction: column;
 align-items: center; 
 
-&__animationselected
-{
-    background-color: $color-tertiare;   
-    padding: 28px;        
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    width: 44%;
-    transform: scale(0);
-    position: relative;
-    left: 26%;
-    bottom: 19px;
-    height: 32px;
-}
-&__checkedicon
-{
-    font-size: 2em;
-    background-color: $color-tertiare;
-    border-radius: 39px;
-    color:$color-blanc;
-    display: flex;
-    width: 30px;
-    justify-content: center;
-    margin-left: 32%;
-    line-height: 30px !important;
-    
-}
-
-&__prix
-{
-    font-weight: bold;
-    position: relative;
-    left: 77%;
-    top: 58px;
-
-    &__trigger
+    &__animationselected
     {
-        transform-origin: right;
+        background-color: $color-tertiare;   
+        padding: 8vw;        
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 8%;
+        transform: scale(0);
         position: relative;
-        bottom: 86px;
-        width: 35%;
-        height: 88px;
-        left: 64%;  
-
-      
-        
-       
+        left: 45%;
+        bottom: 13px;
+        height: 3.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__checkedicon
+    {
+        font-size: 6vw;
+        background-color: $color-tertiare;
+        border-radius: 39px;
+        color:$color-blanc;
+        display: flex;
+        width: 30px;
+        justify-content: center;
+        margin-left: 2%;
+        line-height: 30px !important;
         
     }
-}
-&__choix
-{
-    background-color: $color-grisclaire;
-    box-shadow: $box-shadow;  
-    width: 40%;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-&__titre
-{
-    font-family:$font-titre;
-    text-align: center;
-    background-color: $color-grisclaire;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    box-shadow: $box-shadow;
-    width: 82%;
-    margin-left: -8%;        
-}
-&__like
-{
-    font-size: 1.6em;
-    text-align: center;
-    display: flow-root !important;
-    position: relative;
-    margin-top: -56px;
-    margin-right: -284px;
-    padding-bottom: 3%;
-    transform-origin: bottom;       
-    
-}
-&__likefill
-{
-    font-size: 1.6em;
-    text-align: center;
-    display: block !important;
-    position: relative;
-    margin-top: -35px;
-    margin-right: -284px;
-    padding-bottom: 3%; 
-    color:$color-primaire;
-    opacity: 0;       
 
-}
-.animationheart {
-    transform-origin: bottom;    
-
-&:hover .menu__likefill {
-    animation: filllike 500ms ease-in;        
-    animation-fill-mode: both;   
-}
-    
-&:hover .menu__like {
-    animation: likevide 500ms ease-in;        
-    animation-fill-mode: both;   
-}
-
-}
-&__button
-{
-    
-    margin-top: 14%;
-    margin-bottom: 11%;
-}
-&__epd
-{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 69%;         
-
-
-    &__item
+    &__prix
     {
-        background-color: $color-blanc;
+        font-weight: bold;
+        position: relative;
+        left: 77%;
+        top: 58px;
+
+        &__trigger
+        {
+            transform-origin: right;
+            position: relative;
+            bottom: 83px;
+            width: 35%;
+            height: 88px;
+            left: 64%;            
+        }
+    }
+    &__choix
+    {
+        background-color: $color-grisclaire;
+        box-shadow: $box-shadow;  
+        width: 100%;
         border-radius: 30px;
-        padding-left: 29px;
-        margin-bottom: 3%;
-        height: 88px;
         display: flex;
         flex-direction: column;
-
-        &__titreplat
-        {
-            font-weight: bold;
-        }
-
-        &__descriptionprix
-        {
-            display: grid;
-            grid-template-columns: 83% 1% 33%;                             
-            margin-top: 0px;                
-        }
-        &:hover .menu__epd__item__descriptionprix{
-            animation:menuprixitem 300ms linear;
-            animation-fill-mode: forwards;
-        }
-        &:hover .menu__checkedicon{
-            animation: checkicon 250ms linear;
-            animation-fill-mode: both;
-        }
-        &:hover .menu__animationselected{ 
-            animation:selected 300ms linear;
-            animation-fill-mode: both;
-
-        }
-        &:hover .menu__prix {
-            animation:prixmove 300ms linear;
-            animation-fill-mode: both;
-        }
-       
+        align-items: center;    
+        padding-top: 27px;
+    }
+    &__titre
+    {
+        font-family:$font-titre;
+        text-align: left;
+        background-color: $color-grisclaire;    
+        padding-top: 6%;
+        padding-bottom: 6px;
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;    
+        width: 92%; 
+        padding-left: 8%;     
+        font-size: 6vw;     
+        margin-top: -7%; 
+        position: absolute;
+    }
+    &__like
+    {
+        font-size: 6vw;    
+        display: flow-root !important;        
+        left: 82%;
+        margin-top: unset;
+        margin-right: unset;   
+        margin-left: 81%; 
+        transform-origin: bottom;    
+        width: 32px;   
         
     }
-    @include menuitemanimation;
-
-}
-
-&__section
-{
-    border-bottom: 2px solid $color-tertiare;
-    width: 50px;
-    margin-left: 39%;
-    &__platmargin
+    &__likefill
     {
-        margin-left: 0%;
+        font-size: 6vw;    
+        display: block !important;            
+        left: 82%;
+        bottom: 24px;
+        margin-left: 81%;
+        margin-top: -6%;
+        margin-right: unset;
+        color:$color-primaire;
+        opacity: 0;  
+        width: 32px;     
+
     }
-    &__dessertmargin
+    .animationheart 
     {
-        margin-right: -1%;
+        transform-origin: bottom;   
+        position: relative; 
+
+        &:hover .menu__likefill 
+        {
+            animation: filllike 500ms ease-in;        
+            animation-fill-mode: both;   
+        }
+            
+        &:hover .menu__like 
+        {
+            animation: likevide 500ms ease-in;        
+            animation-fill-mode: both;   
+        }
+
+    }
+    &__button
+    {        
+        margin-top: 12%;
+        margin-bottom: 11%;
+        font-size: 3.5vw;
+        width: 40%;
+        height: 11vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 44px;
+        padding: unset;
+    }
+    &__epd
+    {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 93%;         
+
+
+        &__item
+        {
+            background-color: $color-blanc;
+            border-radius: 19px;
+            padding-left: 9px;
+            margin-bottom: 3%;
+            height: 19vw;
+            display: flex;
+            flex-direction: column;
+            width: 96%;
+            margin-left: 6px;
+
+            &__titreplat
+            {
+                font-weight: bold;
+                font-size: 4vw;            
+            }
+
+            &__descriptionprix
+            {
+                display: grid;
+                grid-template-columns: 83% 1% 33%;                             
+                margin-top: 0px;
+                font-size: 3.5vw;                
+            }
+                &:hover .menu__epd__item__descriptionprix
+                {
+                    animation:menuprixitem 300ms linear;
+                    animation-fill-mode: forwards;
+                }
+                &:hover .menu__checkedicon
+                {
+                    animation: checkicon 250ms linear;
+                    animation-fill-mode: both;
+                }
+                &:hover .menu__animationselected{
+
+                    animation:selected 300ms linear;
+                    animation-fill-mode: both;
+
+                }
+                &:hover .menu__prix 
+                {
+                    animation:prixmove 300ms linear;
+                    animation-fill-mode: both;
+                }
+            
+            
+        }
+        @include menuitemanimation;
+
     }
 
-
-}
+    &__section
+    {
+        border-bottom: 2px solid $color-tertiare;
+        width: 50px;
+        margin-left: 12px;
+        font-size: $font-size-textr;
+        &__platmargin
+        {
+            margin-left: 0%;
+        }
+        &__dessertmargin
+        {
+            margin-right: -1%;
+        }
+    }
 
 }
 
@@ -236,11 +255,17 @@ align-items: center;
 .imgrestomenu
 {
     max-width: 27%;
+    margin-bottom: unset;
     position: relative;
     bottom: 18%;   
     left: 36%;     
     border-radius: 25px;
     box-shadow: $box-shadow;
+}
+#logorest
+{
+width: 14%;
+margin-left: 5%;
 }
 
 
@@ -263,6 +288,10 @@ align-items: center;
     padding-top: 1%;
     margin-top: 11px;
 }
+.menu > div
+{
+    width: 722px;
+}
 .menu
 {
     justify-content: center;
@@ -280,8 +309,10 @@ align-items: center;
         transform: scale(0);
         position: relative;
         left: 26%;
-        bottom: 19px;
-        height: 32px;
+        bottom: 19px;        
+        height: 32px;        
+        justify-content: unset;
+        align-items: unset;
     }
     &__checkedicon
     {
@@ -301,8 +332,8 @@ align-items: center;
     {
         font-weight: bold;
         position: relative;
-        left: 77%;
-        top: 58px;
+        left: 70%;
+        top: 57px;
 
         &__trigger
         {
@@ -311,11 +342,7 @@ align-items: center;
             bottom: 86px;
             width: 35%;
             height: 88px;
-            left: 64%;  
-
-        
-            
-        
+            left: 64%;         
             
         }
     }
@@ -328,6 +355,8 @@ align-items: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: unset;
+        padding-top: unset;
     }
     &__titre
     {
@@ -341,53 +370,71 @@ align-items: center;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         box-shadow: $box-shadow;
-        width: 82%;
-        margin-left: -8%;        
+        width: 442px;
+        margin-left: 10%;
+        margin-bottom: -7px;  
+        margin-top: 1%;
+        font-size: 1.5em; 
+        position: unset;     
     }
     &__like
     {
         font-size: 1.6em;
         text-align: center;
         display: flow-root !important;
-        position: relative;
-        margin-top: -56px;
-        margin-right: -284px;
-        padding-bottom: 3%;
-        transform-origin: bottom;       
-        
+        position: absolute; 
+        left: unset;
+        bottom: 5px;  
+        right: 147px;  
+        padding-bottom: 0;
+        transform-origin: bottom;  
+        width: unset;  
+        margin-left: unset;         
     }
     &__likefill
     {
         font-size: 1.6em;
         text-align: center;
         display: block !important;
-        position: relative;
-        margin-top: -35px;
-        margin-right: -284px;
-        padding-bottom: 3%; 
+        position: absolute;
+        left: unset;
+        right: 147px;
+        bottom: 5px;
+        margin-left: unset;  
+        margin-top: unset;      
+        padding-bottom: 0; 
         color:$color-primaire;
-        opacity: 0;       
+        opacity: 0;  
+        width: unset;  
+    }
+    .animationheart 
+    {
+        transform-origin: bottom;           
+
+        &:hover .menu__likefill 
+        {
+            animation: filllike 500ms ease-in;        
+            animation-fill-mode: both;   
+        }
+            
+        &:hover .menu__like 
+        {
+            animation: likevide 500ms ease-in;        
+            animation-fill-mode: both;   
+        }
 
     }
-    .animationheart {
-        transform-origin: bottom;    
 
-    &:hover .menu__likefill {
-        animation: filllike 500ms ease-in;        
-        animation-fill-mode: both;   
-    }
-        
-    &:hover .menu__like {
-        animation: likevide 500ms ease-in;        
-        animation-fill-mode: both;   
-    }
-
-    }
+    
     &__button
     {
         
         margin-top: 14%;
         margin-bottom: 11%;
+        font-size: unset;        
+        text-align: unset;
+        height: unset;
+        padding: 14px;
     }
     &__epd
     {
@@ -406,32 +453,311 @@ align-items: center;
             height: 88px;
             display: flex;
             flex-direction: column;
+            margin-left: unset;
 
             &__titreplat
             {
                 font-weight: bold;
+                font-size: unset;
             }
 
             &__descriptionprix
             {
                 display: grid;
                 grid-template-columns: 83% 1% 33%;                             
-                margin-top: 0px;                
+                margin-top: 0px; 
+                font-size: unset;               
             }
-            &:hover .menu__epd__item__descriptionprix{
+                &:hover .menu__epd__item__descriptionprix
+                {
+                    animation:menuprixitem 300ms linear;
+                    animation-fill-mode: forwards;
+                }
+                &:hover .menu__checkedicon
+                {
+                    animation: checkicon 250ms linear;
+                    animation-fill-mode: both;
+                }
+                &:hover .menu__animationselected
+                { 
+                    animation:selected 300ms linear;
+                    animation-fill-mode: both;
+
+                }
+                &:hover .menu__prix 
+                {
+                    animation:prixmove 300ms linear;
+                    animation-fill-mode: both;
+                }
+        
+            
+        }
+        @include menuitemanimation;
+
+        
+    }
+
+    &__section
+    {
+        border-bottom: 2px solid $color-tertiare;
+        width: 50px;
+        margin-left: 39%;
+        font-size: unset;
+        &__platmargin
+        {
+            margin-left: 0%;
+        }
+        &__dessertmargin
+        {
+            margin-right: -1%;
+        }
+
+    
+    }
+}
+}
+
+@media screen and (min-width:720px) and (max-width:1366px)
+{
+.imgrestomenu
+{
+    max-width: 100%;
+    width: 60%;
+    height: 39vw;
+    margin-right: 20%;
+    margin-left: 20%;
+    object-fit: cover;
+    margin-bottom: unset;
+    position: relative;
+    bottom: 18%;   
+    left: 0%;     
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+}
+#logorest
+{
+width: 14%;
+margin-left: 5%;
+}
+
+
+
+.tmenusection
+{
+    border-bottom: 2px solid $color-tertiare;
+    width: 50px;
+}
+
+
+.coeurmenu
+{    
+    font-size:1.2em;
+}
+
+
+.espacement
+{
+    padding-top: 1%;
+    margin-top: 11px;
+}
+.menu > div
+{
+    width: 722px;
+}
+.menu
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    &__animationselected
+    {
+        background-color: $color-tertiare;   
+        padding: 28px;        
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 44%;
+        transform: scale(0);
+        position: relative;
+        left: 26%;
+        bottom: 19px;        
+        height: 32px;        
+        justify-content: unset;
+        align-items: unset;
+    }
+    &__checkedicon
+    {
+        font-size: 2em;
+        background-color: $color-tertiare;
+        border-radius: 39px;
+        color:$color-blanc;
+        display: flex;
+        width: 30px;
+        justify-content: center;
+        margin-left: 32%;
+        line-height: 30px !important;
+        
+    }
+
+    &__prix
+    {
+        font-weight: bold;
+        position: relative;
+        left: 70%;
+        top: 57px;
+
+        &__trigger
+        {
+            transform-origin: right;
+            position: relative;
+            bottom: 86px;
+            width: 35%;
+            height: 88px;
+            left: 64%;         
+            
+        }
+    }
+    &__choix
+    {
+        background-color: $color-grisclaire;
+        box-shadow: $box-shadow;  
+        width: 40%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: unset;
+        padding-top: unset;
+    }
+    &__titre
+    {
+        font-family:$font-titre;
+        text-align: center;
+        background-color: $color-grisclaire;
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        box-shadow: $box-shadow;
+        width: 442px;
+        margin-left: 10%;
+        margin-bottom: -7px;  
+        margin-top: 1%;
+        font-size: 1.5em; 
+        position: unset;     
+    }
+    &__like
+    {
+        font-size: 1.6em;
+        text-align: center;
+        display: flow-root !important;
+        position: absolute; 
+        left: unset;
+        bottom: 5px;  
+        right: 147px;  
+        padding-bottom: 0;
+        transform-origin: bottom;  
+        width: unset;  
+        margin-left: unset;   
+        
+    }
+    &__likefill
+    {
+        font-size: 1.6em;
+        text-align: center;
+        display: block !important;
+        position: absolute;
+        left: unset;
+        right: 147px;
+        bottom: 5px;
+        margin-left: unset;  
+        margin-top: unset;      
+        padding-bottom: 0; 
+        color:$color-primaire;
+        opacity: 0;  
+        width: unset;     
+
+    }
+    .animationheart 
+    {
+        transform-origin: bottom;           
+
+        &:hover .menu__likefill 
+        {
+            animation: filllike 500ms ease-in;        
+            animation-fill-mode: both;   
+        }
+            
+        &:hover .menu__like 
+        {
+            animation: likevide 500ms ease-in;        
+            animation-fill-mode: both;   
+        }
+
+    }
+    &__button
+    {
+        
+        margin-top: 14%;
+        margin-bottom: 11%;
+        font-size: unset;        
+        text-align: unset;
+        height: unset;
+        padding: 14px;
+    }
+    &__epd
+    {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 69%;         
+
+
+        &__item
+        {
+            background-color: $color-blanc;
+            border-radius: 30px;
+            padding-left: 29px;
+            margin-bottom: 3%;
+            height: 88px;
+            display: flex;
+            flex-direction: column;
+            margin-left: unset;
+
+            &__titreplat
+            {
+                font-weight: bold;
+                font-size: unset;
+            }
+
+            &__descriptionprix
+            {
+                display: grid;
+                grid-template-columns: 83% 1% 33%;                             
+                margin-top: 0px; 
+                font-size: unset;               
+            }
+            &:hover .menu__epd__item__descriptionprix
+            {
                 animation:menuprixitem 300ms linear;
                 animation-fill-mode: forwards;
             }
-            &:hover .menu__checkedicon{
+            &:hover .menu__checkedicon
+            {
                 animation: checkicon 250ms linear;
                 animation-fill-mode: both;
             }
-            &:hover .menu__animationselected{ 
+            &:hover .menu__animationselected
+            { 
                 animation:selected 300ms linear;
                 animation-fill-mode: both;
 
             }
-            &:hover .menu__prix {
+            &:hover .menu__prix 
+            {
                 animation:prixmove 300ms linear;
                 animation-fill-mode: both;
             }
@@ -448,6 +774,7 @@ align-items: center;
         border-bottom: 2px solid $color-tertiare;
         width: 50px;
         margin-left: 39%;
+        font-size: unset;
         &__platmargin
         {
             margin-left: 0%;
@@ -459,9 +786,11 @@ align-items: center;
 
 
     }
+
+
+}
 }
 
-@media screen and (min-width:720px) and (max-width:1366px)
-{
-}
-}
+
+
+

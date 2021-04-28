@@ -418,6 +418,10 @@ a:visited {
   font-size: 4vw;
 }
 
+#footerul a:link {
+  color: #ffffff;
+}
+
 li {
   margin-bottom: 2%;
 }
@@ -853,18 +857,17 @@ li {
   }
 }
 .imgrestomenu {
-  max-width: 27%;
-  position: relative;
-  bottom: 18%;
-  left: 36%;
+  margin-bottom: -7%;
+  max-width: 100%;
   border-radius: 25px;
   box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
 }
 
 #logorest {
-  margin-left: 1%;
-  margin-top: 1%;
-  width: 14%;
+  margin-left: 23%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  width: 51%;
 }
 
 .tmenusection {
@@ -881,6 +884,10 @@ li {
   margin-top: 11px;
 }
 
+.menu > div {
+  width: 100%;
+}
+
 .menu {
   justify-content: center;
   display: flex;
@@ -889,25 +896,28 @@ li {
 }
 .menu__animationselected {
   background-color: #99E2D0;
-  padding: 28px;
+  padding: 8vw;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  width: 44%;
+  width: 8%;
   transform: scale(0);
   position: relative;
-  left: 26%;
-  bottom: 19px;
-  height: 32px;
+  left: 45%;
+  bottom: 13px;
+  height: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu__checkedicon {
-  font-size: 2em;
+  font-size: 6vw;
   background-color: #99E2D0;
   border-radius: 39px;
   color: #ffffff;
   display: flex;
   width: 30px;
   justify-content: center;
-  margin-left: 32%;
+  margin-left: 2%;
   line-height: 30px !important;
 }
 .menu__prix {
@@ -919,7 +929,7 @@ li {
 .menu__prix__trigger {
   transform-origin: right;
   position: relative;
-  bottom: 86px;
+  bottom: 83px;
   width: 35%;
   height: 88px;
   left: 64%;
@@ -927,49 +937,52 @@ li {
 .menu__choix {
   background-color: #f6f6f6;
   box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
-  width: 40%;
+  width: 100%;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 27px;
 }
 .menu__titre {
   font-family: "Shrikhand", cursive;
-  text-align: center;
+  text-align: left;
   background-color: #f6f6f6;
-  padding-right: 60px;
-  padding-left: 60px;
-  padding-top: 6px;
+  padding-top: 6%;
   padding-bottom: 6px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
-  width: 82%;
-  margin-left: -8%;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  width: 92%;
+  padding-left: 8%;
+  font-size: 6vw;
+  margin-top: -7%;
+  position: absolute;
 }
 .menu__like {
-  font-size: 1.6em;
-  text-align: center;
+  font-size: 6vw;
   display: flow-root !important;
-  position: relative;
-  margin-top: -56px;
-  margin-right: -284px;
-  padding-bottom: 3%;
+  left: 82%;
+  margin-top: unset;
+  margin-right: unset;
+  margin-left: 81%;
   transform-origin: bottom;
+  width: 32px;
 }
 .menu__likefill {
-  font-size: 1.6em;
-  text-align: center;
+  font-size: 6vw;
   display: block !important;
-  position: relative;
-  margin-top: -35px;
-  margin-right: -284px;
-  padding-bottom: 3%;
+  left: 82%;
+  bottom: 24px;
+  margin-left: 81%;
+  margin-top: -6%;
+  margin-right: unset;
   color: #9356DC;
   opacity: 0;
+  width: 32px;
 }
 .menu .animationheart {
   transform-origin: bottom;
+  position: relative;
 }
 .menu .animationheart:hover .menu__likefill {
   animation: filllike 500ms ease-in;
@@ -980,31 +993,43 @@ li {
   animation-fill-mode: both;
 }
 .menu__button {
-  margin-top: 14%;
+  margin-top: 12%;
   margin-bottom: 11%;
+  font-size: 3.5vw;
+  width: 40%;
+  height: 11vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 44px;
+  padding: unset;
 }
 .menu__epd {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 69%;
+  width: 93%;
 }
 .menu__epd__item {
   background-color: #ffffff;
-  border-radius: 30px;
-  padding-left: 29px;
+  border-radius: 19px;
+  padding-left: 9px;
   margin-bottom: 3%;
-  height: 88px;
+  height: 19vw;
   display: flex;
   flex-direction: column;
+  width: 96%;
+  margin-left: 6px;
 }
 .menu__epd__item__titreplat {
   font-weight: bold;
+  font-size: 4vw;
 }
 .menu__epd__item__descriptionprix {
   display: grid;
   grid-template-columns: 83% 1% 33%;
   margin-top: 0px;
+  font-size: 3.5vw;
 }
 .menu__epd__item:hover .menu__epd__item__descriptionprix {
   animation: menuprixitem 300ms linear;
@@ -1095,7 +1120,8 @@ li {
 .menu__section {
   border-bottom: 2px solid #99E2D0;
   width: 50px;
-  margin-left: 39%;
+  margin-left: 12px;
+  font-size: 4vw;
 }
 .menu__section__platmargin {
   margin-left: 0%;
@@ -1107,11 +1133,17 @@ li {
 @media screen and (min-width: 1368px) {
   .imgrestomenu {
     max-width: 27%;
+    margin-bottom: unset;
     position: relative;
     bottom: 18%;
     left: 36%;
     border-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+  }
+
+  #logorest {
+    width: 14%;
+    margin-left: 5%;
   }
 
   .tmenusection {
@@ -1126,6 +1158,10 @@ li {
   .espacement {
     padding-top: 1%;
     margin-top: 11px;
+  }
+
+  .menu > div {
+    width: 722px;
   }
 
   .menu {
@@ -1145,6 +1181,8 @@ li {
     left: 26%;
     bottom: 19px;
     height: 32px;
+    justify-content: unset;
+    align-items: unset;
   }
   .menu__checkedicon {
     font-size: 2em;
@@ -1160,8 +1198,8 @@ li {
   .menu__prix {
     font-weight: bold;
     position: relative;
-    left: 77%;
-    top: 58px;
+    left: 70%;
+    top: 57px;
   }
   .menu__prix__trigger {
     transform-origin: right;
@@ -1179,6 +1217,8 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: unset;
+    padding-top: unset;
   }
   .menu__titre {
     font-family: "Shrikhand", cursive;
@@ -1191,29 +1231,40 @@ li {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
-    width: 82%;
-    margin-left: -8%;
+    width: 442px;
+    margin-left: 10%;
+    margin-bottom: -7px;
+    margin-top: 1%;
+    font-size: 1.5em;
+    position: unset;
   }
   .menu__like {
     font-size: 1.6em;
     text-align: center;
     display: flow-root !important;
-    position: relative;
-    margin-top: -56px;
-    margin-right: -284px;
-    padding-bottom: 3%;
+    position: absolute;
+    left: unset;
+    bottom: 5px;
+    right: 147px;
+    padding-bottom: 0;
     transform-origin: bottom;
+    width: unset;
+    margin-left: unset;
   }
   .menu__likefill {
     font-size: 1.6em;
     text-align: center;
     display: block !important;
-    position: relative;
-    margin-top: -35px;
-    margin-right: -284px;
-    padding-bottom: 3%;
+    position: absolute;
+    left: unset;
+    right: 147px;
+    bottom: 5px;
+    margin-left: unset;
+    margin-top: unset;
+    padding-bottom: 0;
     color: #9356DC;
     opacity: 0;
+    width: unset;
   }
   .menu .animationheart {
     transform-origin: bottom;
@@ -1229,6 +1280,10 @@ li {
   .menu__button {
     margin-top: 14%;
     margin-bottom: 11%;
+    font-size: unset;
+    text-align: unset;
+    height: unset;
+    padding: 14px;
   }
   .menu__epd {
     display: flex;
@@ -1244,14 +1299,17 @@ li {
     height: 88px;
     display: flex;
     flex-direction: column;
+    margin-left: unset;
   }
   .menu__epd__item__titreplat {
     font-weight: bold;
+    font-size: unset;
   }
   .menu__epd__item__descriptionprix {
     display: grid;
     grid-template-columns: 83% 1% 33%;
     margin-top: 0px;
+    font-size: unset;
   }
   .menu__epd__item:hover .menu__epd__item__descriptionprix {
     animation: menuprixitem 300ms linear;
@@ -1343,6 +1401,292 @@ li {
     border-bottom: 2px solid #99E2D0;
     width: 50px;
     margin-left: 39%;
+    font-size: unset;
+  }
+  .menu__section__platmargin {
+    margin-left: 0%;
+  }
+  .menu__section__dessertmargin {
+    margin-right: -1%;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1366px) {
+  .imgrestomenu {
+    max-width: 100%;
+    width: 60%;
+    height: 39vw;
+    margin-right: 20%;
+    margin-left: 20%;
+    object-fit: cover;
+    margin-bottom: unset;
+    position: relative;
+    bottom: 18%;
+    left: 0%;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+  }
+
+  #logorest {
+    width: 14%;
+    margin-left: 5%;
+  }
+
+  .tmenusection {
+    border-bottom: 2px solid #99E2D0;
+    width: 50px;
+  }
+
+  .coeurmenu {
+    font-size: 1.2em;
+  }
+
+  .espacement {
+    padding-top: 1%;
+    margin-top: 11px;
+  }
+
+  .menu > div {
+    width: 722px;
+  }
+
+  .menu {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__animationselected {
+    background-color: #99E2D0;
+    padding: 28px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 44%;
+    transform: scale(0);
+    position: relative;
+    left: 26%;
+    bottom: 19px;
+    height: 32px;
+    justify-content: unset;
+    align-items: unset;
+  }
+  .menu__checkedicon {
+    font-size: 2em;
+    background-color: #99E2D0;
+    border-radius: 39px;
+    color: #ffffff;
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    margin-left: 32%;
+    line-height: 30px !important;
+  }
+  .menu__prix {
+    font-weight: bold;
+    position: relative;
+    left: 70%;
+    top: 57px;
+  }
+  .menu__prix__trigger {
+    transform-origin: right;
+    position: relative;
+    bottom: 86px;
+    width: 35%;
+    height: 88px;
+    left: 64%;
+  }
+  .menu__choix {
+    background-color: #f6f6f6;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+    width: 40%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: unset;
+    padding-top: unset;
+  }
+  .menu__titre {
+    font-family: "Shrikhand", cursive;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+    width: 442px;
+    margin-left: 10%;
+    margin-bottom: -7px;
+    margin-top: 1%;
+    font-size: 1.5em;
+    position: unset;
+  }
+  .menu__like {
+    font-size: 1.6em;
+    text-align: center;
+    display: flow-root !important;
+    position: absolute;
+    left: unset;
+    bottom: 5px;
+    right: 147px;
+    padding-bottom: 0;
+    transform-origin: bottom;
+    width: unset;
+    margin-left: unset;
+  }
+  .menu__likefill {
+    font-size: 1.6em;
+    text-align: center;
+    display: block !important;
+    position: absolute;
+    left: unset;
+    right: 147px;
+    bottom: 5px;
+    margin-left: unset;
+    margin-top: unset;
+    padding-bottom: 0;
+    color: #9356DC;
+    opacity: 0;
+    width: unset;
+  }
+  .menu .animationheart {
+    transform-origin: bottom;
+  }
+  .menu .animationheart:hover .menu__likefill {
+    animation: filllike 500ms ease-in;
+    animation-fill-mode: both;
+  }
+  .menu .animationheart:hover .menu__like {
+    animation: likevide 500ms ease-in;
+    animation-fill-mode: both;
+  }
+  .menu__button {
+    margin-top: 14%;
+    margin-bottom: 11%;
+    font-size: unset;
+    text-align: unset;
+    height: unset;
+    padding: 14px;
+  }
+  .menu__epd {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 69%;
+  }
+  .menu__epd__item {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding-left: 29px;
+    margin-bottom: 3%;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    margin-left: unset;
+  }
+  .menu__epd__item__titreplat {
+    font-weight: bold;
+    font-size: unset;
+  }
+  .menu__epd__item__descriptionprix {
+    display: grid;
+    grid-template-columns: 83% 1% 33%;
+    margin-top: 0px;
+    font-size: unset;
+  }
+  .menu__epd__item:hover .menu__epd__item__descriptionprix {
+    animation: menuprixitem 300ms linear;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__item:hover .menu__checkedicon {
+    animation: checkicon 250ms linear;
+    animation-fill-mode: both;
+  }
+  .menu__epd__item:hover .menu__animationselected {
+    animation: selected 300ms linear;
+    animation-fill-mode: both;
+  }
+  .menu__epd__item:hover .menu__prix {
+    animation: prixmove 300ms linear;
+    animation-fill-mode: both;
+  }
+  .menu__epd__entree1 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 400ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__entree2 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 500ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__entree3 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 600ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__entree4 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 650ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__plat1 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 750ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__plat2 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 850ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__plat3 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 850ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__dessert1 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 950ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__dessert2 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 1050ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__epd__dessert3 {
+    opacity: 0;
+    animation: opacitymenu 300ms;
+    animation-delay: 1150ms;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+  }
+  .menu__section {
+    border-bottom: 2px solid #99E2D0;
+    width: 50px;
+    margin-left: 39%;
+    font-size: unset;
   }
   .menu__section__platmargin {
     margin-left: 0%;
