@@ -49,9 +49,8 @@ align-items: center;
         border-bottom-right-radius: 25px;
         width: 8%;
         transform: scale(0);
-        position: relative;
-        left: 45%;
-        bottom: 13px;
+        margin-top: -22px;
+        margin-left: 25%;       
         height: 3.5vw;
         display: flex;
         justify-content: center;
@@ -254,11 +253,13 @@ align-items: center;
 @media screen and (min-width:1368px) {
 .imgrestomenu
 {
-    max-width: 27%;
+    max-width: 28%;
+    min-height: 322px;
+    object-fit: cover;
     margin-bottom: unset;
     position: relative;
     bottom: 18%;   
-    left: 36%;     
+    left: 35.6%;     
     border-radius: 25px;
     box-shadow: $box-shadow;
 }
@@ -579,12 +580,12 @@ margin-left: 5%;
         border-bottom-right-radius: 25px;
         width: 44%;
         transform: scale(0);
-        position: relative;
-        left: 26%;
-        bottom: 19px;        
+        position:unset;               
         height: 32px;        
         justify-content: unset;
         align-items: unset;
+        margin-top: -20px;
+        margin-left: 25%;
     }
     &__checkedicon
     {

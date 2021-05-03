@@ -436,7 +436,8 @@ li {
   width: 80px;
   height: 80px;
   top: 41%;
-  left: 45%;
+  left: 36%;
+  color: #9356DC;
 }
 
 .lds-ring div {
@@ -446,7 +447,7 @@ li {
   width: 100px;
   height: 100px;
   margin: 8px;
-  border: 8px solid #9356DC;
+  border: 8px solid #FF79DA;
   border-radius: 50%;
   animation: lds-ring 3.89s cubic-bezier(0.5, 0, 0.5, 1);
   animation-fill-mode: forwards;
@@ -472,6 +473,10 @@ li {
 }
 
 @media screen and (min-width: 1368px) {
+  .lds-ring {
+    left: 45%;
+  }
+
   .elips {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -675,6 +680,10 @@ li {
   }
 }
 @media screen and (min-width: 720px) and (max-width: 1366px) {
+  .lds-ring {
+    left: 45%;
+  }
+
   .elips {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -901,9 +910,8 @@ li {
   border-bottom-right-radius: 25px;
   width: 8%;
   transform: scale(0);
-  position: relative;
-  left: 45%;
-  bottom: 13px;
+  margin-top: -22px;
+  margin-left: 25%;
   height: 3.5vw;
   display: flex;
   justify-content: center;
@@ -1132,11 +1140,13 @@ li {
 
 @media screen and (min-width: 1368px) {
   .imgrestomenu {
-    max-width: 27%;
+    max-width: 28%;
+    min-height: 322px;
+    object-fit: cover;
     margin-bottom: unset;
     position: relative;
     bottom: 18%;
-    left: 36%;
+    left: 35.6%;
     border-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
   }
@@ -1462,12 +1472,12 @@ li {
     border-bottom-right-radius: 25px;
     width: 44%;
     transform: scale(0);
-    position: relative;
-    left: 26%;
-    bottom: 19px;
+    position: unset;
     height: 32px;
     justify-content: unset;
     align-items: unset;
+    margin-top: -20px;
+    margin-left: 25%;
   }
   .menu__checkedicon {
     font-size: 2em;

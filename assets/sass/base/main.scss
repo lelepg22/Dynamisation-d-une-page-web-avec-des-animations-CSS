@@ -353,6 +353,10 @@ margin-right: 13px;
 
 @media screen and (min-width:1368px) {
     
+    .lds-ring{
+        left: 45%;
+
+    }
 
     .elips{
             text-overflow: ellipsis;
@@ -596,6 +600,9 @@ margin-right: 13px;
 
     @media screen and (min-width:720px) and (max-width:1366px)
     {
+    .lds-ring{
+        left: 45%;        
+    }
         .elips{
             text-overflow: ellipsis;
             overflow:hidden;
