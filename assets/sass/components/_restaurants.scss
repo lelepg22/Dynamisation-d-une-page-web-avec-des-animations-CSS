@@ -46,8 +46,7 @@ align-items: center;
         background-color: $color-tertiare;   
         padding: 8vw;        
         border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
-        width: 8%;
+        border-bottom-right-radius: 25px;        
         transform: scale(0);
         margin-top: -22px;
         margin-left: 25%;       
@@ -254,7 +253,7 @@ align-items: center;
 .imgrestomenu
 {
     max-width: 28%;
-    min-height: 322px;
+    min-height: 355.25px;
     object-fit: cover;
     margin-bottom: unset;
     position: relative;
@@ -309,8 +308,8 @@ margin-left: 5%;
         width: 44%;
         transform: scale(0);
         position: relative;
-        left: 26%;
-        bottom: 19px;        
+        left: 2%;
+        bottom: -3px;        
         height: 32px;        
         justify-content: unset;
         align-items: unset;
@@ -518,7 +517,7 @@ margin-left: 5%;
 }
 }
 
-@media screen and (min-width:720px) and (max-width:1366px)
+@media screen and (min-width:600px) and (max-width:1366px)
 {
 .imgrestomenu
 {

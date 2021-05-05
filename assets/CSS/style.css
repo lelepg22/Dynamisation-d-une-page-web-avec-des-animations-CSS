@@ -908,7 +908,6 @@ li {
   padding: 8vw;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  width: 8%;
   transform: scale(0);
   margin-top: -22px;
   margin-left: 25%;
@@ -1141,7 +1140,7 @@ li {
 @media screen and (min-width: 1368px) {
   .imgrestomenu {
     max-width: 28%;
-    min-height: 322px;
+    min-height: 355.25px;
     object-fit: cover;
     margin-bottom: unset;
     position: relative;
@@ -1188,8 +1187,8 @@ li {
     width: 44%;
     transform: scale(0);
     position: relative;
-    left: 26%;
-    bottom: 19px;
+    left: 2%;
+    bottom: -3px;
     height: 32px;
     justify-content: unset;
     align-items: unset;
@@ -1420,7 +1419,7 @@ li {
     margin-right: -1%;
   }
 }
-@media screen and (min-width: 720px) and (max-width: 1366px) {
+@media screen and (min-width: 600px) and (max-width: 1366px) {
   .imgrestomenu {
     max-width: 100%;
     width: 60%;
