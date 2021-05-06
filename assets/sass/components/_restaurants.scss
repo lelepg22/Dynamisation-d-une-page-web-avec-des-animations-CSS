@@ -44,13 +44,13 @@ align-items: center;
     &__animationselected
     {
         background-color: $color-tertiare;   
-        padding: 8vw;        
+        padding: 28px;        
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;        
         transform: scale(0);
-        margin-top: -22px;
-        margin-left: 25%;       
-        height: 3.5vw;
+        margin-top: -12px;
+        margin-left: 30%;       
+        height: 22px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,7 +73,7 @@ align-items: center;
     {
         font-weight: bold;
         position: relative;
-        left: 77%;
+        left: 61%;
         top: 58px;
 
         &__trigger
@@ -83,7 +83,7 @@ align-items: center;
             bottom: 83px;
             width: 35%;
             height: 88px;
-            left: 64%;            
+            left: 67%;            
         }
     }
     &__choix
@@ -183,16 +183,16 @@ align-items: center;
             border-radius: 19px;
             padding-left: 9px;
             margin-bottom: 3%;
-            height: 19vw;
+            height: 77px;
             display: flex;
             flex-direction: column;
             width: 96%;
-            margin-left: 6px;
+           
 
             &__titreplat
             {
                 font-weight: bold;
-                font-size: 4vw;            
+                font-size: 91%;            
             }
 
             &__descriptionprix
@@ -200,7 +200,7 @@ align-items: center;
                 display: grid;
                 grid-template-columns: 83% 1% 33%;                             
                 margin-top: 0px;
-                font-size: 3.5vw;                
+                font-size: 82%;                
             }
                 &:hover .menu__epd__item__descriptionprix
                 {
@@ -517,7 +517,7 @@ margin-left: 5%;
 }
 }
 
-@media screen and (min-width:600px) and (max-width:1366px)
+@media screen and (min-width:541px) and (max-width:1366px)
 {
 .imgrestomenu
 {
