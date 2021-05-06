@@ -214,7 +214,8 @@ padding-bottom: 18px;
 
 #restaut
 {
-   padding-top: 1%;
+   padding-top: 5%;
+   margin-bottom: 0;
    width: 100%;   
    margin-left: -27%;    
 }
@@ -509,10 +510,11 @@ margin-right: 13px;
     }
 
     #restaut
-    {
+    {       
         padding-top: 1%;
         width: 100%; 
-        margin-left: unset;      
+        margin-left: unset; 
+        margin-bottom: unset;     
     }
 
     .restaurants
@@ -737,7 +739,8 @@ margin-right: 13px;
 
     #restaut
     {      
-        margin-left: unset;      
+        margin-left: unset;  
+        margin-bottom: unset;    
     }
 
     .restaurants

@@ -290,7 +290,8 @@ ul {
 }
 
 #restaut {
-  padding-top: 1%;
+  padding-top: 5%;
+  margin-bottom: 0;
   width: 100%;
   margin-left: -27%;
 }
@@ -606,6 +607,7 @@ li {
     padding-top: 1%;
     width: 100%;
     margin-left: unset;
+    margin-bottom: unset;
   }
 
   .restaurants {
@@ -791,6 +793,7 @@ li {
 
   #restaut {
     margin-left: unset;
+    margin-bottom: unset;
   }
 
   .restaurants {
@@ -867,8 +870,9 @@ li {
 }
 .imgrestomenu {
   margin-bottom: -7%;
-  max-width: 100%;
-  border-radius: 25px;
+  width: 100%;
+  height: 274px;
+  object-fit: cover;
   box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
 }
 
@@ -909,9 +913,9 @@ li {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   transform: scale(0);
-  margin-top: -12px;
+  margin-top: -13px;
   margin-left: 30%;
-  height: 22px;
+  height: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -931,12 +935,12 @@ li {
   font-weight: bold;
   position: relative;
   left: 61%;
-  top: 58px;
+  top: 38px;
 }
 .menu__prix__trigger {
   transform-origin: right;
   position: relative;
-  bottom: 83px;
+  bottom: 67px;
   width: 35%;
   height: 88px;
   left: 67%;
@@ -1000,16 +1004,15 @@ li {
   animation-fill-mode: both;
 }
 .menu__button {
-  margin-top: 12%;
-  margin-bottom: 11%;
-  font-size: 3.5vw;
-  width: 40%;
-  height: 11vw;
+  margin-top: 10%;
+  margin-bottom: 77px;
+  font-size: 94%;
+  width: 41%;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 44px;
-  padding: unset;
 }
 .menu__epd {
   display: flex;
@@ -1022,7 +1025,7 @@ li {
   border-radius: 19px;
   padding-left: 9px;
   margin-bottom: 3%;
-  height: 77px;
+  height: 61px;
   display: flex;
   flex-direction: column;
   width: 96%;
@@ -1030,6 +1033,7 @@ li {
 .menu__epd__item__titreplat {
   font-weight: bold;
   font-size: 91%;
+  line-height: 3px;
 }
 .menu__epd__item__descriptionprix {
   display: grid;
@@ -1312,6 +1316,7 @@ li {
   .menu__epd__item__titreplat {
     font-weight: bold;
     font-size: unset;
+    line-height: unset;
   }
   .menu__epd__item__descriptionprix {
     display: grid;
@@ -1597,6 +1602,7 @@ li {
   .menu__epd__item__titreplat {
     font-weight: bold;
     font-size: unset;
+    line-height: unset;
   }
   .menu__epd__item__descriptionprix {
     display: grid;
