@@ -390,7 +390,7 @@ footer {
 }
 
 a:visited {
-  color: #ffffff;
+  color: inherit;
 }
 
 .afoot {
@@ -876,6 +876,14 @@ li {
   box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
 }
 
+.retour {
+  position: relative;
+  bottom: 12px;
+  left: 7%;
+  font-size: 23px;
+  color: #595959;
+}
+
 #logorest {
   margin-left: 23%;
   margin-top: 2%;
@@ -1013,6 +1021,7 @@ li {
   align-items: center;
   justify-content: center;
   border-radius: 44px;
+  color: white !important;
 }
 .menu__epd {
   display: flex;
@@ -1151,6 +1160,13 @@ li {
     left: 35.6%;
     border-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+  }
+
+  .retour {
+    position: relative;
+    bottom: 24px;
+    left: 2%;
+    font-size: 32px;
   }
 
   #logorest {
@@ -1436,6 +1452,13 @@ li {
     left: 12%;
     border-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+  }
+
+  .retour {
+    position: relative;
+    bottom: 14px;
+    left: 2%;
+    font-size: 29px;
   }
 
   #logorest {
