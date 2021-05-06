@@ -1154,7 +1154,7 @@ li {
   }
 
   #logorest {
-    width: 14%;
+    width: 200px;
     margin-left: 5%;
   }
 
@@ -1426,21 +1426,21 @@ li {
 @media screen and (min-width: 541px) and (max-width: 1366px) {
   .imgrestomenu {
     max-width: 100%;
-    width: 60%;
-    height: 39vw;
+    width: 40%;
+    height: 20%;
     margin-right: 20%;
     margin-left: 20%;
     object-fit: cover;
     margin-bottom: unset;
     position: relative;
     bottom: 18%;
-    left: 0%;
+    left: 12%;
     border-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
   }
 
   #logorest {
-    width: 14%;
+    width: 200px;
     margin-left: 5%;
   }
 
@@ -1459,7 +1459,7 @@ li {
   }
 
   .menu > div {
-    width: 722px;
+    width: 500px;
   }
 
   .menu {
@@ -1529,7 +1529,7 @@ li {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
-    width: 442px;
+    width: 303px;
     margin-left: 10%;
     margin-bottom: -7px;
     margin-top: 1%;
@@ -1543,7 +1543,7 @@ li {
     position: absolute;
     left: unset;
     bottom: 5px;
-    right: 147px;
+    right: 63px;
     padding-bottom: 0;
     transform-origin: bottom;
     width: unset;
@@ -1555,7 +1555,7 @@ li {
     display: block !important;
     position: absolute;
     left: unset;
-    right: 147px;
+    right: 63px;
     bottom: 5px;
     margin-left: unset;
     margin-top: unset;

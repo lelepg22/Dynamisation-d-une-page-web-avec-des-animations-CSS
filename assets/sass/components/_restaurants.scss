@@ -266,7 +266,7 @@ align-items: center;
 }
 #logorest
 {
-width: 14%;
+width: 200px;
 margin-left: 5%;
 }
 
@@ -525,21 +525,21 @@ margin-left: 5%;
 .imgrestomenu
 {
     max-width: 100%;
-    width: 60%;
-    height: 39vw;
+    width: 40%;
+    height: 20%;
     margin-right: 20%;
     margin-left: 20%;
     object-fit: cover;
     margin-bottom: unset;
     position: relative;
     bottom: 18%;   
-    left: 0%;     
+    left: 12%;     
     border-radius: 25px;
     box-shadow: $box-shadow;
 }
 #logorest
 {
-width: 14%;
+width: 200px;
 margin-left: 5%;
 }
 
@@ -565,7 +565,7 @@ margin-left: 5%;
 }
 .menu > div
 {
-    width: 722px;
+    width: 500px;
 }
 .menu
 {
@@ -645,7 +645,7 @@ margin-left: 5%;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         box-shadow: $box-shadow;
-        width: 442px;
+        width: 303px;
         margin-left: 10%;
         margin-bottom: -7px;  
         margin-top: 1%;
@@ -660,7 +660,7 @@ margin-left: 5%;
         position: absolute; 
         left: unset;
         bottom: 5px;  
-        right: 147px;  
+        right: 63px;  
         padding-bottom: 0;
         transform-origin: bottom;  
         width: unset;  
@@ -674,7 +674,7 @@ margin-left: 5%;
         display: block !important;
         position: absolute;
         left: unset;
-        right: 147px;
+        right: 63px;
         bottom: 5px;
         margin-left: unset;  
         margin-top: unset;      
