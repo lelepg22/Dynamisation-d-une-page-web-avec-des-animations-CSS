@@ -60,7 +60,7 @@ list-style-type: none;
 .buttons
 {
 background-color: $color-secondaire;
-color: $color-blanc;
+color: $color-blanc !important;
 width: fit-content;
 padding: 14px;
 border-radius: 25px;
@@ -68,7 +68,7 @@ transition: background-color 400ms, box-shadow 350ms;
 margin-top: 2%;
     &:hover{
        @include buttoneffect;
-    }
+    }    
 
 }
 #hed
@@ -359,13 +359,7 @@ margin-right: 13px;
 
     }
 
-    .elips{
-            text-overflow: ellipsis;
-            overflow:hidden;
-            white-space:nowrap; 
-            max-width: 100%;
-    }    
-
+    
     h1
     {
         font-family: $font-titre;
@@ -379,17 +373,12 @@ margin-right: 13px;
         text-decoration: none;     
     }
     }
-
-    ul
-    {
-        list-style-type: none;
-    }
-
+    
     .buttons
     {      
         &:hover{
         @include buttoneffect;
-        }
+        }        
 
     }   
 
@@ -591,11 +580,7 @@ margin-right: 13px;
     {     
         flex-direction: row;
         font-size: unset;
-    }    
-    .footicon
-    {
-        margin-right: 13px;
-    }
+    }       
 
     
     }
@@ -604,13 +589,7 @@ margin-right: 13px;
     {
     .lds-ring{
         left: 45%;        
-    }
-        .elips{
-            text-overflow: ellipsis;
-            overflow:hidden;
-            white-space:nowrap; 
-            max-width: 100%;
-    }    
+    }          
 
     h1
     {
@@ -624,12 +603,7 @@ margin-right: 13px;
         text-decoration: none;     
     }
 
-    }
-
-    ul
-    {
-        list-style-type: none;
-    }
+    }  
 
     .buttons
     {        

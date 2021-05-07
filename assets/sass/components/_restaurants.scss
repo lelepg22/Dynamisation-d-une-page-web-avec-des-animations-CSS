@@ -264,17 +264,16 @@ align-items: center;
 {
     max-width: 28%;
     min-height: 355.25px;
-    object-fit: cover;
     margin-bottom: unset;
     position: relative;
     bottom: 18%;   
     left: 35.6%;     
     border-radius: 25px;
-    box-shadow: $box-shadow;
+    
 }
 .retour
 {
-    position: relative;
+    
     bottom: 24px;
     left: 2%;
     font-size: 32px;   
@@ -301,49 +300,30 @@ margin-left: 5%;
 }
 
 
-.espacement
-{
-    padding-top: 1%;
-    margin-top: 11px;
-}
+
 .menu > div
 {
     width: 722px;
 }
 .menu
-{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+{    
 
     &__animationselected
-    {
-        background-color: $color-tertiare;   
-        padding: 28px;        
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
-        width: 44%;
-        transform: scale(0);
+    {         
+        width: 44%;        
         position: relative;
         left: 2%;
         bottom: 8px;        
         height: 32px;        
         justify-content: unset;
         align-items: unset;
+        margin-top: -11px;
     }
+
     &__checkedicon
     {
-        font-size: 2em;
-        background-color: $color-tertiare;
-        border-radius: 39px;
-        color:$color-blanc;
-        display: flex;
-        width: 30px;
-        justify-content: center;
-        margin-left: 32%;
-        line-height: 30px !important;
-        
+        font-size: 2em;        
+        margin-left: 32%;        
     }
 
     &__prix
@@ -354,33 +334,20 @@ margin-left: 5%;
         top: 57px;
 
         &__trigger
-        {
-            transform-origin: right;
-            position: relative;
-            bottom: 86px;
-            width: 35%;
-            height: 88px;
-            left: 64%;         
-            
+        {                
+            bottom: 86px;            
+            left: 64%;            
         }
     }
     &__choix
-    {
-        background-color: $color-grisclaire;
-        box-shadow: $box-shadow;  
-        width: 40%;
-        border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    {        
+        width: 40%;        
         margin-top: unset;
         padding-top: unset;
     }
     &__titre
     {
-        font-family:$font-titre;
-        text-align: center;
-        background-color: $color-grisclaire;
+        text-align: center;        
         padding-right: 60px;
         padding-left: 60px;
         padding-top: 6px;
@@ -424,25 +391,7 @@ margin-left: 5%;
         color:$color-primaire;
         opacity: 0;  
         width: unset;  
-    }
-    .animationheart 
-    {
-        transform-origin: bottom;           
-
-        &:hover .menu__likefill 
-        {
-            animation: filllike 500ms ease-in;        
-            animation-fill-mode: both;   
-        }
-            
-        &:hover .menu__like 
-        {
-            animation: likevide 500ms ease-in;        
-            animation-fill-mode: both;   
-        }
-
-    }
-
+    }    
     
     &__button
     {
@@ -455,81 +404,38 @@ margin-left: 5%;
         padding: 14px;        
     }
     &__epd
-    {
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
+    {       
         width: 69%;         
 
 
         &__item
-        {
-            background-color: $color-blanc;
+        {            
             border-radius: 30px;
-            padding-left: 29px;
-            margin-bottom: 3%;
-            height: 88px;
-            display: flex;
-            flex-direction: column;
+            padding-left: 29px;            
+            height: 88px;            
             margin-left: unset;
 
             &__titreplat
-            {
-                font-weight: bold;
+            {                
                 font-size: unset;
                 line-height: unset;
             }
 
             &__descriptionprix
-            {
-                display: grid;
-                grid-template-columns: 83% 1% 33%;                             
-                margin-top: 0px; 
+            {               
                 font-size: unset;               
-            }
-                &:hover .menu__epd__item__descriptionprix
-                {
-                    animation:menuprixitem 300ms linear;
-                    animation-fill-mode: forwards;
-                }
-                &:hover .menu__checkedicon
-                {
-                    animation: checkicon 250ms linear;
-                    animation-fill-mode: both;
-                }
-                &:hover .menu__animationselected
-                { 
-                    animation:selected 300ms linear;
-                    animation-fill-mode: both;
-
-                }
-                &:hover .menu__prix 
-                {
-                    animation:prixmove 300ms linear;
-                    animation-fill-mode: both;
-                }
-        
+            }               
             
-        }
-        @include menuitemanimation;
+        }        
 
         
     }
 
     &__section
-    {
-        border-bottom: 2px solid $color-tertiare;
-        width: 50px;
+    {       
+        
         margin-left: 39%;
-        font-size: unset;
-        &__platmargin
-        {
-            margin-left: 0%;
-        }
-        &__dessertmargin
-        {
-            margin-right: -1%;
-        }
+        font-size: unset;   
 
     
     }
@@ -543,18 +449,16 @@ margin-left: 5%;
     max-width: 100%;
     width: 40%;    
     margin-right: 20%;
-    margin-left: 20%;
-    object-fit: cover;
+    margin-left: 20%;   
     margin-bottom: unset;
     position: relative;
     bottom: 18%;   
     left: 12%;     
     border-radius: 25px;
-    box-shadow: $box-shadow;
+    
 }
 .retour
-{
-    position: relative;
+{    
     bottom: 14px;
     left: 2%;
     font-size: 29px;
@@ -579,50 +483,28 @@ margin-left: 5%;
     font-size:1.2em;
 }
 
-
-.espacement
-{
-    padding-top: 1%;
-    margin-top: 11px;
-}
 .menu > div
 {
     width: 500px;
 }
 .menu
-{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+{   
 
     &__animationselected
-    {
-        background-color: $color-tertiare;   
-        padding: 28px;        
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
-        width: 44%;
-        transform: scale(0);
+    {       
+        width: 44%;        
         position:unset;               
         height: 32px;        
         justify-content: unset;
         align-items: unset;
-        margin-top: -20px;
+        margin-top: -17px;
         margin-left: 25%;
     }
+
     &__checkedicon
     {
-        font-size: 2em;
-        background-color: $color-tertiare;
-        border-radius: 39px;
-        color:$color-blanc;
-        display: flex;
-        width: 30px;
-        justify-content: center;
-        margin-left: 32%;
-        line-height: 30px !important;
-        
+        font-size: 2em;        
+        margin-left: 32%;        
     }
 
     &__prix
@@ -633,33 +515,21 @@ margin-left: 5%;
         top: 57px;
 
         &__trigger
-        {
-            transform-origin: right;
-            position: relative;
-            bottom: 86px;
-            width: 35%;
-            height: 88px;
-            left: 64%;         
-            
+        {            
+            bottom: 86px;           
+            left: 64%;            
         }
     }
     &__choix
-    {
-        background-color: $color-grisclaire;
-        box-shadow: $box-shadow;  
+    {       
         width: 40%;
-        border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        border-radius: 30px;        
         margin-top: unset;
         padding-top: unset;
     }
     &__titre
-    {
-        font-family:$font-titre;
-        text-align: center;
-        background-color: $color-grisclaire;
+    {        
+        text-align: center;        
         padding-right: 60px;
         padding-left: 60px;
         padding-top: 6px;
@@ -706,23 +576,7 @@ margin-left: 5%;
         width: unset;     
 
     }
-    .animationheart 
-    {
-        transform-origin: bottom;           
-
-        &:hover .menu__likefill 
-        {
-            animation: filllike 500ms ease-in;        
-            animation-fill-mode: both;   
-        }
-            
-        &:hover .menu__like 
-        {
-            animation: likevide 500ms ease-in;        
-            animation-fill-mode: both;   
-        }
-
-    }
+    
     &__button
     {
         
@@ -734,27 +588,20 @@ margin-left: 5%;
         padding: 14px;
     }
     &__epd
-    {
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
+    {       
         width: 69%;         
 
 
         &__item
         {
-            background-color: $color-blanc;
+            
             border-radius: 30px;
-            padding-left: 29px;
-            margin-bottom: 3%;
-            height: 88px;
-            display: flex;
-            flex-direction: column;
+            padding-left: 29px;            
+            height: 88px;            
             margin-left: unset;
 
             &__titreplat
-            {
-                font-weight: bold;
+            {                
                 font-size: unset;
                 line-height: unset;
             }
@@ -764,51 +611,20 @@ margin-left: 5%;
                 display: grid;
                 grid-template-columns: 83% 1% 33%;                             
                 margin-top: 0px; 
-                font-size: unset;               
+                font-size: 91%;               
             }
-            &:hover .menu__epd__item__descriptionprix
-            {
-                animation:menuprixitem 300ms linear;
-                animation-fill-mode: forwards;
-            }
-            &:hover .menu__checkedicon
-            {
-                animation: checkicon 250ms linear;
-                animation-fill-mode: both;
-            }
-            &:hover .menu__animationselected
-            { 
-                animation:selected 300ms linear;
-                animation-fill-mode: both;
-
-            }
-            &:hover .menu__prix 
-            {
-                animation:prixmove 300ms linear;
-                animation-fill-mode: both;
-            }
-        
+           
             
         }
-        @include menuitemanimation;
+       
 
         
     }
 
     &__section
-    {
-        border-bottom: 2px solid $color-tertiare;
-        width: 50px;
+    {       
         margin-left: 39%;
-        font-size: unset;
-        &__platmargin
-        {
-            margin-left: 0%;
-        }
-        &__dessertmargin
-        {
-            margin-right: -1%;
-        }
+        font-size: unset;     
 
 
     }

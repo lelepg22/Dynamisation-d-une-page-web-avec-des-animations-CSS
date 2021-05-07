@@ -154,7 +154,7 @@ ul {
 
 .buttons {
   background-color: #FF79DA;
-  color: #ffffff;
+  color: #ffffff !important;
   width: fit-content;
   padding: 14px;
   border-radius: 25px;
@@ -478,23 +478,12 @@ li {
     left: 45%;
   }
 
-  .elips {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 100%;
-  }
-
   h1 {
     font-family: "Shrikhand", cursive;
   }
 
   a:visited {
     text-decoration: none;
-  }
-
-  ul {
-    list-style-type: none;
   }
 
   .buttons:hover {
@@ -676,21 +665,10 @@ li {
     flex-direction: row;
     font-size: unset;
   }
-
-  .footicon {
-    margin-right: 13px;
-  }
 }
 @media screen and (min-width: 720px) and (max-width: 1366px) {
   .lds-ring {
     left: 45%;
-  }
-
-  .elips {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 100%;
   }
 
   h1 {
@@ -699,10 +677,6 @@ li {
 
   a:visited {
     text-decoration: none;
-  }
-
-  ul {
-    list-style-type: none;
   }
 
   .buttons:hover {
@@ -1153,17 +1127,14 @@ li {
   .imgrestomenu {
     max-width: 28%;
     min-height: 355.25px;
-    object-fit: cover;
     margin-bottom: unset;
     position: relative;
     bottom: 18%;
     left: 35.6%;
     border-radius: 25px;
-    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
   }
 
   .retour {
-    position: relative;
     bottom: 24px;
     left: 2%;
     font-size: 32px;
@@ -1183,45 +1154,23 @@ li {
     font-size: 1.2em;
   }
 
-  .espacement {
-    padding-top: 1%;
-    margin-top: 11px;
-  }
-
   .menu > div {
     width: 722px;
   }
 
-  .menu {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .menu__animationselected {
-    background-color: #99E2D0;
-    padding: 28px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
     width: 44%;
-    transform: scale(0);
     position: relative;
     left: 2%;
     bottom: 8px;
     height: 32px;
     justify-content: unset;
     align-items: unset;
+    margin-top: -11px;
   }
   .menu__checkedicon {
     font-size: 2em;
-    background-color: #99E2D0;
-    border-radius: 39px;
-    color: #ffffff;
-    display: flex;
-    width: 30px;
-    justify-content: center;
     margin-left: 32%;
-    line-height: 30px !important;
   }
   .menu__prix {
     font-weight: bold;
@@ -1230,28 +1179,16 @@ li {
     top: 57px;
   }
   .menu__prix__trigger {
-    transform-origin: right;
-    position: relative;
     bottom: 86px;
-    width: 35%;
-    height: 88px;
     left: 64%;
   }
   .menu__choix {
-    background-color: #f6f6f6;
-    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
     width: 40%;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: unset;
     padding-top: unset;
   }
   .menu__titre {
-    font-family: "Shrikhand", cursive;
     text-align: center;
-    background-color: #f6f6f6;
     padding-right: 60px;
     padding-left: 60px;
     padding-top: 6px;
@@ -1294,17 +1231,6 @@ li {
     opacity: 0;
     width: unset;
   }
-  .menu .animationheart {
-    transform-origin: bottom;
-  }
-  .menu .animationheart:hover .menu__likefill {
-    animation: filllike 500ms ease-in;
-    animation-fill-mode: both;
-  }
-  .menu .animationheart:hover .menu__like {
-    animation: likevide 500ms ease-in;
-    animation-fill-mode: both;
-  }
   .menu__button {
     margin-top: 14%;
     margin-bottom: 11%;
@@ -1314,129 +1240,24 @@ li {
     padding: 14px;
   }
   .menu__epd {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 69%;
   }
   .menu__epd__item {
-    background-color: #ffffff;
     border-radius: 30px;
     padding-left: 29px;
-    margin-bottom: 3%;
     height: 88px;
-    display: flex;
-    flex-direction: column;
     margin-left: unset;
   }
   .menu__epd__item__titreplat {
-    font-weight: bold;
     font-size: unset;
     line-height: unset;
   }
   .menu__epd__item__descriptionprix {
-    display: grid;
-    grid-template-columns: 83% 1% 33%;
-    margin-top: 0px;
     font-size: unset;
-  }
-  .menu__epd__item:hover .menu__epd__item__descriptionprix {
-    animation: menuprixitem 300ms linear;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__item:hover .menu__checkedicon {
-    animation: checkicon 250ms linear;
-    animation-fill-mode: both;
-  }
-  .menu__epd__item:hover .menu__animationselected {
-    animation: selected 300ms linear;
-    animation-fill-mode: both;
-  }
-  .menu__epd__item:hover .menu__prix {
-    animation: prixmove 300ms linear;
-    animation-fill-mode: both;
-  }
-  .menu__epd__entree1 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 400ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__entree2 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 500ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__entree3 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 600ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__entree4 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 650ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__plat1 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 750ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__plat2 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 850ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__plat3 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 850ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__dessert1 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 950ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__dessert2 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 1050ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__dessert3 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 1150ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
   }
   .menu__section {
-    border-bottom: 2px solid #99E2D0;
-    width: 50px;
     margin-left: 39%;
     font-size: unset;
-  }
-  .menu__section__platmargin {
-    margin-left: 0%;
-  }
-  .menu__section__dessertmargin {
-    margin-right: -1%;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1366px) {
@@ -1445,17 +1266,14 @@ li {
     width: 40%;
     margin-right: 20%;
     margin-left: 20%;
-    object-fit: cover;
     margin-bottom: unset;
     position: relative;
     bottom: 18%;
     left: 12%;
     border-radius: 25px;
-    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
   }
 
   .retour {
-    position: relative;
     bottom: 14px;
     left: 2%;
     font-size: 29px;
@@ -1475,45 +1293,22 @@ li {
     font-size: 1.2em;
   }
 
-  .espacement {
-    padding-top: 1%;
-    margin-top: 11px;
-  }
-
   .menu > div {
     width: 500px;
   }
 
-  .menu {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .menu__animationselected {
-    background-color: #99E2D0;
-    padding: 28px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
     width: 44%;
-    transform: scale(0);
     position: unset;
     height: 32px;
     justify-content: unset;
     align-items: unset;
-    margin-top: -20px;
+    margin-top: -17px;
     margin-left: 25%;
   }
   .menu__checkedicon {
     font-size: 2em;
-    background-color: #99E2D0;
-    border-radius: 39px;
-    color: #ffffff;
-    display: flex;
-    width: 30px;
-    justify-content: center;
     margin-left: 32%;
-    line-height: 30px !important;
   }
   .menu__prix {
     font-weight: bold;
@@ -1522,28 +1317,17 @@ li {
     top: 57px;
   }
   .menu__prix__trigger {
-    transform-origin: right;
-    position: relative;
     bottom: 86px;
-    width: 35%;
-    height: 88px;
     left: 64%;
   }
   .menu__choix {
-    background-color: #f6f6f6;
-    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
     width: 40%;
     border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: unset;
     padding-top: unset;
   }
   .menu__titre {
-    font-family: "Shrikhand", cursive;
     text-align: center;
-    background-color: #f6f6f6;
     padding-right: 60px;
     padding-left: 60px;
     padding-top: 6px;
@@ -1586,17 +1370,6 @@ li {
     opacity: 0;
     width: unset;
   }
-  .menu .animationheart {
-    transform-origin: bottom;
-  }
-  .menu .animationheart:hover .menu__likefill {
-    animation: filllike 500ms ease-in;
-    animation-fill-mode: both;
-  }
-  .menu .animationheart:hover .menu__like {
-    animation: likevide 500ms ease-in;
-    animation-fill-mode: both;
-  }
   .menu__button {
     margin-top: 14%;
     margin-bottom: 11%;
@@ -1606,23 +1379,15 @@ li {
     padding: 14px;
   }
   .menu__epd {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 69%;
   }
   .menu__epd__item {
-    background-color: #ffffff;
     border-radius: 30px;
     padding-left: 29px;
-    margin-bottom: 3%;
     height: 88px;
-    display: flex;
-    flex-direction: column;
     margin-left: unset;
   }
   .menu__epd__item__titreplat {
-    font-weight: bold;
     font-size: unset;
     line-height: unset;
   }
@@ -1630,105 +1395,11 @@ li {
     display: grid;
     grid-template-columns: 83% 1% 33%;
     margin-top: 0px;
-    font-size: unset;
-  }
-  .menu__epd__item:hover .menu__epd__item__descriptionprix {
-    animation: menuprixitem 300ms linear;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__item:hover .menu__checkedicon {
-    animation: checkicon 250ms linear;
-    animation-fill-mode: both;
-  }
-  .menu__epd__item:hover .menu__animationselected {
-    animation: selected 300ms linear;
-    animation-fill-mode: both;
-  }
-  .menu__epd__item:hover .menu__prix {
-    animation: prixmove 300ms linear;
-    animation-fill-mode: both;
-  }
-  .menu__epd__entree1 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 400ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__entree2 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 500ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__entree3 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 600ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__entree4 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 650ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__plat1 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 750ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__plat2 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 850ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__plat3 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 850ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__dessert1 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 950ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__dessert2 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 1050ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
-  }
-  .menu__epd__dessert3 {
-    opacity: 0;
-    animation: opacitymenu 300ms;
-    animation-delay: 1150ms;
-    transform-origin: top;
-    animation-fill-mode: forwards;
+    font-size: 91%;
   }
   .menu__section {
-    border-bottom: 2px solid #99E2D0;
-    width: 50px;
     margin-left: 39%;
     font-size: unset;
-  }
-  .menu__section__platmargin {
-    margin-left: 0%;
-  }
-  .menu__section__dessertmargin {
-    margin-right: -1%;
   }
 }
 
