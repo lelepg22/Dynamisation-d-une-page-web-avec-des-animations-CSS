@@ -17,9 +17,7 @@ box-shadow: $box-shadow;
 
 #logorest
 {
-    margin-left: 23%;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    margin: 2% 0 1% 23%;    
     width: 51%;
 }
 
@@ -57,8 +55,7 @@ align-items: center;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;        
         transform: scale(0);
-        margin-top: -13px;
-        margin-left: 30%;       
+        margin:-13px 0 0 30% ;             
         height: 5px;
         display: flex;
         justify-content: center;
@@ -110,13 +107,11 @@ align-items: center;
     {
         font-family:$font-titre;
         text-align: left;
-        background-color: $color-grisclaire;    
-        padding-top: 6%;
-        padding-bottom: 6px;
+        background-color: $color-grisclaire;
+        padding: 6% 0 6px 8%;           
         border-top-left-radius: 45px;
         border-top-right-radius: 45px;    
-        width: 92%; 
-        padding-left: 8%;     
+        width: 92%;             
         font-size: 6vw;     
         margin-top: -7%; 
         position: absolute;
@@ -167,8 +162,7 @@ align-items: center;
     }
     &__button
     {        
-        margin-top: 10%;
-        margin-bottom: 77px;
+        margin:10% 0 77px;        
         font-size: 94%;
         width: 41%;
         height: 20px;
@@ -347,18 +341,13 @@ margin-left: 5%;
     }
     &__titre
     {
-        text-align: center;        
-        padding-right: 60px;
-        padding-left: 60px;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        text-align: center; 
+        padding: 6px 60px 6px 60px;              
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         box-shadow: $box-shadow;
         width: 442px;
-        margin-left: 10%;
-        margin-bottom: -7px;  
-        margin-top: 1%;
+        margin: 1% 0 -7px 10%;        
         font-size: 1.5em; 
         position: unset;     
     }
@@ -395,9 +384,7 @@ margin-left: 5%;
     
     &__button
     {
-        
-        margin-top: 14%;
-        margin-bottom: 11%;
+        margin: 14% 0 11%;        
         font-size: unset;        
         text-align: unset;
         height: unset;
@@ -447,10 +434,8 @@ margin-left: 5%;
 .imgrestomenu
 {
     max-width: 100%;
-    width: 40%;    
-    margin-right: 20%;
-    margin-left: 20%;   
-    margin-bottom: unset;
+    width: 40%;  
+    margin: 0 20% 0;      
     position: relative;
     bottom: 18%;   
     left: 12%;     
@@ -497,8 +482,7 @@ margin-left: 5%;
         height: 32px;        
         justify-content: unset;
         align-items: unset;
-        margin-top: -17px;
-        margin-left: 25%;
+        margin: -17px 0 0 25%;       
     }
 
     &__checkedicon
@@ -529,18 +513,13 @@ margin-left: 5%;
     }
     &__titre
     {        
-        text-align: center;        
-        padding-right: 60px;
-        padding-left: 60px;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        text-align: center;  
+        padding: 6px 60px 6px 60px;        
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         box-shadow: $box-shadow;
         width: 303px;
-        margin-left: 10%;
-        margin-bottom: -7px;  
-        margin-top: 1%;
+        margin: 1% auto -7px 10%;       
         font-size: 1.5em; 
         position: unset;     
     }
@@ -580,8 +559,7 @@ margin-left: 5%;
     &__button
     {
         
-        margin-top: 14%;
-        margin-bottom: 11%;
+        margin: 14% 0 11%;       
         font-size: unset;        
         text-align: unset;
         height: unset;

@@ -185,13 +185,11 @@ ul {
   width: 100%;
   font-size: 3.8vw;
   margin-bottom: 1%;
-  padding-top: 21px;
-  padding-bottom: 19px;
+  padding: 21px 0 19px;
 }
 
 #logo {
-  margin-left: 1%;
-  margin-top: 1%;
+  margin: 1% 0 0 1%;
   width: 44%;
   position: relative;
   left: 28%;
@@ -230,25 +228,21 @@ ul {
   padding-bottom: 9%;
 }
 .bottomheader h2 {
-  margin-top: 9%;
+  margin: 9% 0 0 -46%;
   font-size: 6.2vw;
-  margin-left: -46%;
 }
 .bottomheader__fonctionitems {
   background-color: #f6f6f6;
   font-weight: bold;
-  padding-bottom: 7%;
-  padding-top: 7%;
-  padding-right: 1%;
-  margin-bottom: 2%;
+  padding: 7% 1% 7% 0;
+  margin: 0 1% 2% 3%;
   text-align: center;
   width: 88%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   font-size: 4vw;
   border-radius: 14px;
-  margin-left: 3%;
-  margin-right: 1%;
   position: relative;
   box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
 }
@@ -290,10 +284,9 @@ ul {
 }
 
 #restaut {
+  margin: 0 0 0 -27%;
   padding-top: 5%;
-  margin-bottom: 0;
   width: 100%;
-  margin-left: -27%;
 }
 
 .restaurants {
@@ -326,10 +319,9 @@ ul {
   color: black;
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
+  margin: -1% 0 0 5%;
   align-items: flex-start;
   font-size: 5vw;
-  margin-top: -1%;
 }
 .restaurants__newtag {
   background-color: #99E2D0;
@@ -413,8 +405,7 @@ a:visited {
   display: flex;
   width: 79%;
   justify-content: space-between;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 1% auto 1%;
   flex-direction: column;
   font-size: 4vw;
 }
@@ -507,13 +498,11 @@ li {
     left: 78%;
     top: 4px;
     font-size: 1em;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 2px 0 2px 0;
   }
 
   #logo {
-    margin-left: 1%;
-    margin-top: -1%;
+    margin: -1% 0 0 1%;
     width: 14%;
     position: unset;
   }
@@ -526,8 +515,7 @@ li {
     padding-bottom: 2%;
     border-radius: 78px;
     width: 32%;
-    margin-left: 33%;
-    margin-top: -4%;
+    margin: -4% 0 1% 33%;
     font-size: unset;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
   }
@@ -542,7 +530,7 @@ li {
     padding-bottom: unset;
   }
   .bottomheader h2 {
-    margin-bottom: -38.7px;
+    margin-bottom: -21.7px;
     font-size: 1.4em;
     margin-top: unset;
     margin-left: unset;
@@ -550,7 +538,7 @@ li {
   .bottomheader__fonctionitems {
     background-color: #f6f6f6;
     font-weight: bold;
-    padding-bottom: 1%;
+    padding: 1% 0 1% 36px;
     margin-bottom: -1%;
     text-align: center;
     width: 16%;
@@ -558,9 +546,6 @@ li {
     font-size: 1em;
     justify-content: unset;
     align-items: center;
-    padding-right: 0;
-    padding-top: 1%;
-    padding-left: 36px;
     border-radius: 25px;
     margin-right: unset;
     position: relative;
@@ -689,8 +674,7 @@ li {
     height: 51px;
     width: 22%;
     font-size: unset;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 2px 0 2px 0;
     border-radius: 25px;
     margin-right: 2%;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
@@ -700,8 +684,7 @@ li {
   }
 
   #logo {
-    margin-left: 1%;
-    margin-top: 1%;
+    margin: 1% auto auto 1%;
     width: 22%;
     position: unset;
   }
@@ -710,9 +693,7 @@ li {
     padding-bottom: 2%;
     border-radius: 78px;
     width: 32%;
-    margin-left: 33%;
-    margin-top: -51px;
-    margin-bottom: 1%;
+    margin: -51px 0 1% 33%;
     font-size: unset;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
   }
@@ -728,28 +709,24 @@ li {
     padding-bottom: unset;
   }
   .bottomheader h2 {
-    margin-bottom: -38.7px;
+    margin: -32px 0 -38.7px 6px;
     font-size: 1.2em;
-    margin-top: -14px;
-    margin-left: 6px;
   }
   .bottomheader__fonctionitems {
-    padding-bottom: 1%;
+    padding: 1% 0 1% 0;
     margin-bottom: -1%;
+    margin-right: unset;
+    margin-left: 4%;
     width: 23%;
     font-size: 1em;
     justify-content: center;
     align-items: center;
-    padding-top: 1%;
     border-radius: 25px;
-    margin-right: unset;
-    margin-left: 4%;
   }
   .bottomheader__fonctionitems__iconfon {
-    margin-left: 26px;
+    margin: 0 0 0 26px;
     font-size: 1em;
     padding-right: 7px;
-    margin-top: unset;
     position: relative;
     left: -2px;
   }
@@ -859,9 +836,7 @@ li {
 }
 
 #logorest {
-  margin-left: 23%;
-  margin-top: 2%;
-  margin-bottom: 1%;
+  margin: 2% 0 1% 23%;
   width: 51%;
 }
 
@@ -895,8 +870,7 @@ li {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   transform: scale(0);
-  margin-top: -13px;
-  margin-left: 30%;
+  margin: -13px 0 0 30%;
   height: 5px;
   display: flex;
   justify-content: center;
@@ -941,12 +915,10 @@ li {
   font-family: "Shrikhand", cursive;
   text-align: left;
   background-color: #f6f6f6;
-  padding-top: 6%;
-  padding-bottom: 6px;
+  padding: 6% 0 6px 8%;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   width: 92%;
-  padding-left: 8%;
   font-size: 6vw;
   margin-top: -7%;
   position: absolute;
@@ -986,8 +958,7 @@ li {
   animation-fill-mode: both;
 }
 .menu__button {
-  margin-top: 10%;
-  margin-bottom: 77px;
+  margin: 10% 0 77px;
   font-size: 94%;
   width: 41%;
   height: 20px;
@@ -1189,17 +1160,12 @@ li {
   }
   .menu__titre {
     text-align: center;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 6px 60px 6px 60px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
     width: 442px;
-    margin-left: 10%;
-    margin-bottom: -7px;
-    margin-top: 1%;
+    margin: 1% 0 -7px 10%;
     font-size: 1.5em;
     position: unset;
   }
@@ -1232,8 +1198,7 @@ li {
     width: unset;
   }
   .menu__button {
-    margin-top: 14%;
-    margin-bottom: 11%;
+    margin: 14% 0 11%;
     font-size: unset;
     text-align: unset;
     height: unset;
@@ -1264,9 +1229,7 @@ li {
   .imgrestomenu {
     max-width: 100%;
     width: 40%;
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-bottom: unset;
+    margin: 0 20% 0;
     position: relative;
     bottom: 18%;
     left: 12%;
@@ -1303,8 +1266,7 @@ li {
     height: 32px;
     justify-content: unset;
     align-items: unset;
-    margin-top: -17px;
-    margin-left: 25%;
+    margin: -17px 0 0 25%;
   }
   .menu__checkedicon {
     font-size: 2em;
@@ -1328,17 +1290,12 @@ li {
   }
   .menu__titre {
     text-align: center;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 6px 60px 6px 60px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
     width: 303px;
-    margin-left: 10%;
-    margin-bottom: -7px;
-    margin-top: 1%;
+    margin: 1% auto -7px 10%;
     font-size: 1.5em;
     position: unset;
   }
@@ -1371,8 +1328,7 @@ li {
     width: unset;
   }
   .menu__button {
-    margin-top: 14%;
-    margin-bottom: 11%;
+    margin: 14% 0 11%;
     font-size: unset;
     text-align: unset;
     height: unset;
