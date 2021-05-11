@@ -6,6 +6,10 @@ height: 274px;
 object-fit: cover;
 box-shadow: $box-shadow;
 }
+#animhomecoeur
+{
+    height: 0;
+}
 .retour
 {
     position: relative;
@@ -118,12 +122,12 @@ align-items: center;
     }
     &__like
     {
-        font-size: 6vw;    
-        display: flow-root !important;        
-        left: 82%;
+        font-size: 142%;    
+        display: flex !important;  
+        position: relative;
+        left: 83%;
         margin-top: unset;
-        margin-right: unset;   
-        margin-left: 81%; 
+        margin-right: unset;         
         transform-origin: bottom;    
         width: 32px;   
         
@@ -151,13 +155,8 @@ align-items: center;
         {
             animation: filllike 500ms ease-in;        
             animation-fill-mode: both;   
-        }
-            
-        &:hover .menu__like 
-        {
-            animation: likevide 500ms ease-in;        
-            animation-fill-mode: both;   
-        }
+        }            
+        
 
     }
     &__button
@@ -250,6 +249,38 @@ align-items: center;
         }
     }
 
+
+.likefillrest
+{
+
+position: relative;
+left: 82%;
+bottom: 29px; 
+transform: rotate(48deg);
+background: $color-gradientcoeur;
+border-top-right-radius: 50%;
+border-top-left-radius: 50%;
+width: 18px;
+height: 22px;
+@include heartfill;
+}
+
+.fill2rest
+{
+    content: '';    
+    position: relative;
+    left: 85%;    
+    bottom: 52px;
+    background: $color-gradientcoeur; 
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;   
+    width: 17px;
+    transform: rotate(313deg);
+    height: 25px;   
+    transform-origin: bottom;
+    opacity: 0;    
+}
+
 }
 
 
@@ -301,6 +332,37 @@ margin-left: 5%;
 }
 .menu
 {    
+    .likefillrest
+    {
+
+    position: relative;
+    left: 596px;
+    bottom: 34px; 
+    transform: rotate(48deg);
+    background: $color-gradientcoeur;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 17px;
+    height: 20px;
+    @include heartfill;
+    }
+
+    .fill2rest
+    {
+        content: '';    
+        position: relative;
+        left: 605px;    
+        bottom: 55px;
+        background: $color-gradientcoeur; 
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;   
+        width: 18px;
+        transform: rotate(313deg);
+        height: 24px;   
+        transform-origin: bottom;
+        opacity: 0;    
+    }
+
 
     &__animationselected
     {         
@@ -342,12 +404,12 @@ margin-left: 5%;
     &__titre
     {
         text-align: center; 
-        padding: 6px 60px 6px 60px;              
+        padding: 6px 94px 6px ;              
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         box-shadow: $box-shadow;
         width: 442px;
-        margin: 1% 0 -7px 10%;        
+        margin: 1% 0 -7px 6%;        
         font-size: 1.5em; 
         position: unset;     
     }
@@ -359,7 +421,7 @@ margin-left: 5%;
         position: absolute; 
         left: unset;
         bottom: 5px;  
-        right: 147px;  
+        right: 101px;  
         padding-bottom: 0;
         transform-origin: bottom;  
         width: unset;  
@@ -372,7 +434,7 @@ margin-left: 5%;
         display: block !important;
         position: absolute;
         left: unset;
-        right: 147px;
+        right: 101px;
         bottom: 5px;
         margin-left: unset;  
         margin-top: unset;      
@@ -421,7 +483,7 @@ margin-left: 5%;
     &__section
     {       
         
-        margin-left: 39%;
+        margin-left: 42%;
         font-size: unset;   
 
     
@@ -429,7 +491,7 @@ margin-left: 5%;
 }
 }
 
-@media screen and (min-width:541px) and (max-width:1366px)
+@media screen and (min-width:541px) and (max-width:1367px)
 {
 .imgrestomenu
 {
@@ -438,7 +500,7 @@ margin-left: 5%;
     margin: 0 20% 0;      
     position: relative;
     bottom: 18%;   
-    left: 12%;     
+    left: 10%;     
     border-radius: 25px;
     
 }
@@ -463,6 +525,7 @@ margin-left: 5%;
 }
 
 
+
 .coeurmenu
 {    
     font-size:1.2em;
@@ -474,7 +537,29 @@ margin-left: 5%;
 }
 .menu
 {   
+    .fill2rest
+    {
+    position: absolute;
+    left: unset;
+    right: 60px;
+    bottom: 11px;
+    width: 18px;
+    height: 24px;
+    }
+    .likefillrest
+    {
+        position: absolute;
+        left: unset;
+        right: 73px;
+        bottom: 11px;
+        width: 18px;
+        height: 24px;
+    
+    }   
 
+
+
+    
     &__animationselected
     {       
         width: 44%;        
@@ -514,12 +599,12 @@ margin-left: 5%;
     &__titre
     {        
         text-align: center;  
-        padding: 6px 60px 6px 60px;        
+        padding: 6px 67px 6px 67px;        
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         box-shadow: $box-shadow;
         width: 303px;
-        margin: 1% auto -7px 10%;       
+        margin: 1% auto -7px 6%;       
         font-size: 1.5em; 
         position: unset;     
     }
@@ -594,14 +679,13 @@ margin-left: 5%;
            
             
         }
-       
-
+   
         
     }
 
     &__section
     {       
-        margin-left: 39%;
+        margin-left: 42%;
         font-size: unset;     
 
 

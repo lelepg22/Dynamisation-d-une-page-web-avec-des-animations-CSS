@@ -1,15 +1,29 @@
 @keyframes filllike {
     from {
-        transform:scale(0.5);
+        transform:scale(0.5) rotate(48deg);               
          opacity:0;
      }      
      
  
      to{
-         transform: scale(1);
+         transform: scale(1) rotate(48deg);            
          opacity:1;   
      }
  
+ }
+ @keyframes like2 {
+    from {
+        transform:scale(0.5) rotate(313deg);        
+        
+         opacity:0;
+     }      
+     
+ 
+     to{
+         transform: scale(1) rotate(313deg);                
+         opacity:1;   
+     }
+     
  }
 
  @keyframes likevide {

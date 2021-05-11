@@ -1,10 +1,20 @@
 @keyframes filllike {
   from {
-    transform: scale(0.5);
+    transform: scale(0.5) rotate(48deg);
     opacity: 0;
   }
   to {
-    transform: scale(1);
+    transform: scale(1) rotate(48deg);
+    opacity: 1;
+  }
+}
+@keyframes like2 {
+  from {
+    transform: scale(0.5) rotate(313deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(313deg);
     opacity: 1;
   }
 }
@@ -153,7 +163,7 @@ ul {
 }
 
 .buttons {
-  background-color: #FF79DA;
+  background: linear-gradient(345deg, #9356dc 3%, #ff79da 98%);
   color: #ffffff !important;
   width: fit-content;
   padding: 14px;
@@ -162,7 +172,7 @@ ul {
   margin-top: 2%;
 }
 .buttons:hover {
-  background-color: #ff93e1;
+  background: linear-gradient(345deg, #9356dc 0%, #ff79da 7%);
   box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
 }
 
@@ -349,18 +359,61 @@ ul {
   right: 20px;
   bottom: 41px;
 }
+.likeaccueil:hover .likefill {
+  animation: filllike 500ms ease-in;
+  animation-fill-mode: both;
+}
+.likeaccueil:hover .fill2 {
+  animation: like2 500ms ease-in;
+  animation-fill-mode: both;
+}
 
 .likefill {
   font-size: 6.5vw;
   position: absolute;
-  right: 20px;
-  bottom: 41px;
+  right: 28px;
+  bottom: 49px;
+  transform: rotate(48deg);
+  background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  width: 17px;
+  height: 22px;
   color: #9356DC;
   transform-origin: bottom;
   opacity: 0;
 }
-.likefill:hover {
+
+.fill2 {
+  content: "";
+  font-size: 6.5vw;
+  position: absolute;
+  right: 20px;
+  bottom: 48px;
+  background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  width: 16px;
+  transform: rotate(313deg);
+  height: 23px;
+  transform-origin: bottom;
+  opacity: 0;
+}
+
+#animhomecoeur:hover .likefill {
   animation: filllike 500ms ease-in;
+  animation-fill-mode: both;
+}
+#animhomecoeur:hover .fill2 {
+  animation: like2 500ms ease-in;
+  animation-fill-mode: both;
+}
+#animhomecoeur:hover .likefillrest {
+  animation: filllike 500ms ease-in;
+  animation-fill-mode: both;
+}
+#animhomecoeur:hover .fill2rest {
+  animation: like2 500ms ease-in;
   animation-fill-mode: both;
 }
 
@@ -368,10 +421,6 @@ ul {
   color: #9356DC;
   transform-origin: bottom;
   opacity: 0;
-}
-.likefillmenu:hover {
-  animation: filllike 500ms ease-in;
-  animation-fill-mode: both;
 }
 
 footer {
@@ -478,7 +527,7 @@ li {
   }
 
   .buttons:hover {
-    background-color: #ff93e1;
+    background: linear-gradient(345deg, #9356dc 0%, #ff79da 7%);
     box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
   }
 
@@ -618,18 +667,23 @@ li {
   .likefill {
     font-size: 1.4em;
     position: absolute;
-    right: 51px;
-    bottom: 34px;
+    right: 60px;
+    bottom: 40px;
+    width: 15px;
+    height: 20px;
+  }
+
+  .fill2 {
+    right: 50px;
+    bottom: 39px;
+    width: 15px;
+    height: 20px;
   }
 
   .likefillmenu {
     color: #9356DC;
     transform-origin: bottom;
     opacity: 0;
-  }
-  .likefillmenu:hover {
-    animation: filllike 500ms ease-in;
-    animation-fill-mode: both;
   }
 
   footer {
@@ -651,7 +705,7 @@ li {
     font-size: unset;
   }
 }
-@media screen and (min-width: 720px) and (max-width: 1366px) {
+@media screen and (min-width: 720px) and (max-width: 1367px) {
   .lds-ring {
     left: 45%;
   }
@@ -665,7 +719,7 @@ li {
   }
 
   .buttons:hover {
-    background-color: #ff93e1;
+    background: linear-gradient(345deg, #9356dc 0%, #ff79da 7%);
     box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
   }
 
@@ -780,18 +834,23 @@ li {
 
   .likefill {
     font-size: 1.4em;
-    right: 18px;
-    bottom: 26px;
+    right: 27px;
+    bottom: 31px;
+    width: 14px;
+    height: 21px;
+  }
+
+  .fill2 {
+    right: 17px;
+    bottom: 31px;
+    width: 14px;
+    height: 20px;
   }
 
   .likefillmenu {
     color: #9356DC;
     transform-origin: bottom;
     opacity: 0;
-  }
-  .likefillmenu:hover {
-    animation: filllike 500ms ease-in;
-    animation-fill-mode: both;
   }
 
   footer {
@@ -825,6 +884,10 @@ li {
   height: 274px;
   object-fit: cover;
   box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+}
+
+#animhomecoeur {
+  height: 0;
 }
 
 .retour {
@@ -924,12 +987,12 @@ li {
   position: absolute;
 }
 .menu__like {
-  font-size: 6vw;
-  display: flow-root !important;
-  left: 82%;
+  font-size: 142%;
+  display: flex !important;
+  position: relative;
+  left: 83%;
   margin-top: unset;
   margin-right: unset;
-  margin-left: 81%;
   transform-origin: bottom;
   width: 32px;
 }
@@ -951,10 +1014,6 @@ li {
 }
 .menu .animationheart:hover .menu__likefill {
   animation: filllike 500ms ease-in;
-  animation-fill-mode: both;
-}
-.menu .animationheart:hover .menu__like {
-  animation: likevide 500ms ease-in;
   animation-fill-mode: both;
 }
 .menu__button {
@@ -1093,6 +1152,34 @@ li {
 .menu__section__dessertmargin {
   margin-right: -1%;
 }
+.menu .likefillrest {
+  position: relative;
+  left: 82%;
+  bottom: 29px;
+  transform: rotate(48deg);
+  background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  width: 18px;
+  height: 22px;
+  color: #9356DC;
+  transform-origin: bottom;
+  opacity: 0;
+}
+.menu .fill2rest {
+  content: "";
+  position: relative;
+  left: 85%;
+  bottom: 52px;
+  background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  width: 17px;
+  transform: rotate(313deg);
+  height: 25px;
+  transform-origin: bottom;
+  opacity: 0;
+}
 
 @media screen and (min-width: 1368px) {
   .imgrestomenu {
@@ -1129,6 +1216,34 @@ li {
     width: 722px;
   }
 
+  .menu .likefillrest {
+    position: relative;
+    left: 596px;
+    bottom: 34px;
+    transform: rotate(48deg);
+    background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 17px;
+    height: 20px;
+    color: #9356DC;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  .menu .fill2rest {
+    content: "";
+    position: relative;
+    left: 605px;
+    bottom: 55px;
+    background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 18px;
+    transform: rotate(313deg);
+    height: 24px;
+    transform-origin: bottom;
+    opacity: 0;
+  }
   .menu__animationselected {
     width: 44%;
     position: relative;
@@ -1160,12 +1275,12 @@ li {
   }
   .menu__titre {
     text-align: center;
-    padding: 6px 60px 6px 60px;
+    padding: 6px 94px 6px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
     width: 442px;
-    margin: 1% 0 -7px 10%;
+    margin: 1% 0 -7px 6%;
     font-size: 1.5em;
     position: unset;
   }
@@ -1176,7 +1291,7 @@ li {
     position: absolute;
     left: unset;
     bottom: 5px;
-    right: 147px;
+    right: 101px;
     padding-bottom: 0;
     transform-origin: bottom;
     width: unset;
@@ -1188,7 +1303,7 @@ li {
     display: block !important;
     position: absolute;
     left: unset;
-    right: 147px;
+    right: 101px;
     bottom: 5px;
     margin-left: unset;
     margin-top: unset;
@@ -1221,18 +1336,18 @@ li {
     font-size: unset;
   }
   .menu__section {
-    margin-left: 39%;
+    margin-left: 42%;
     font-size: unset;
   }
 }
-@media screen and (min-width: 541px) and (max-width: 1366px) {
+@media screen and (min-width: 541px) and (max-width: 1367px) {
   .imgrestomenu {
     max-width: 100%;
     width: 40%;
     margin: 0 20% 0;
     position: relative;
     bottom: 18%;
-    left: 12%;
+    left: 10%;
     border-radius: 25px;
   }
 
@@ -1260,6 +1375,22 @@ li {
     width: 500px;
   }
 
+  .menu .fill2rest {
+    position: absolute;
+    left: unset;
+    right: 60px;
+    bottom: 11px;
+    width: 18px;
+    height: 24px;
+  }
+  .menu .likefillrest {
+    position: absolute;
+    left: unset;
+    right: 73px;
+    bottom: 11px;
+    width: 18px;
+    height: 24px;
+  }
   .menu__animationselected {
     width: 44%;
     position: unset;
@@ -1290,12 +1421,12 @@ li {
   }
   .menu__titre {
     text-align: center;
-    padding: 6px 60px 6px 60px;
+    padding: 6px 67px 6px 67px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
     width: 303px;
-    margin: 1% auto -7px 10%;
+    margin: 1% auto -7px 6%;
     font-size: 1.5em;
     position: unset;
   }
@@ -1354,7 +1485,7 @@ li {
     font-size: 91%;
   }
   .menu__section {
-    margin-left: 39%;
+    margin-left: 42%;
     font-size: unset;
   }
 }

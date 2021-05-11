@@ -59,7 +59,7 @@ list-style-type: none;
 
 .buttons
 {
-background-color: $color-secondaire;
+background: $color-gradient;
 color: $color-blanc !important;
 width: fit-content;
 padding: 14px;
@@ -271,24 +271,87 @@ font-size: 6.5vw;
 color: black;    
    
 }
+
+
 .likeaccueil
 {
     position: absolute;
     right: 20px;
-    bottom: 41px;
+    bottom: 41px; 
+    &:hover .likefill
+    {
+        animation: filllike 500ms ease-in;
+        animation-fill-mode: both;   
+    }
+    &:hover .fill2 
+    {    
+    animation: like2 500ms ease-in;    
+    animation-fill-mode: both;
+    }   
 }
 
 .likefill
 {
 font-size: 6.5vw;
 position: absolute;
-right: 20px;
-bottom: 41px; 
+right: 28px;
+bottom: 49px; 
+transform: rotate(48deg);
+background: $color-gradientcoeur;
+border-top-right-radius: 50%;
+border-top-left-radius: 50%;
+width: 17px;
+height: 22px;
 @include heartfill;
 }
+
+.fill2
+{
+    content: '';
+    font-size: 6.5vw;
+    position: absolute;
+    right:20px;
+    bottom:48px;
+    background: $color-gradientcoeur; 
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;   
+    width: 16px;
+    transform: rotate(313deg);
+    height: 23px;   
+    transform-origin: bottom;
+    opacity: 0;    
+}
+#animhomecoeur
+    {
+        &:hover .likefill
+        {
+            animation: filllike 500ms ease-in;
+            animation-fill-mode: both;   
+        }
+        &:hover .fill2 
+        {    
+        animation: like2 500ms ease-in;    
+        animation-fill-mode: both;
+        }  
+        &:hover .likefillrest
+        {
+            animation: filllike 500ms ease-in;
+            animation-fill-mode: both;   
+        }
+        &:hover .fill2rest 
+        {    
+        animation: like2 500ms ease-in;    
+        animation-fill-mode: both;
+        } 
+
+    }
+
+
+
 .likefillmenu
 {
 @include heartfill;
+
 }
 
 footer
@@ -531,16 +594,29 @@ margin-right: 13px;
     {        
         right: 51px;
         bottom: 34px;
+       
     }
+    
 
     .likefill
     {
         font-size: 1.4em;
         position: absolute;
-        right: 51px;
-        bottom: 34px; 
+        right: 60px;
+        bottom: 40px; 
+        width: 15px;
+        height: 20px;
         
     }
+    .fill2
+    {
+        right: 50px;
+        bottom: 39px;
+        width: 15px;
+        height: 20px;
+
+    }
+
     .likefillmenu
     {
         @include heartfill;
@@ -573,7 +649,7 @@ margin-right: 13px;
     
     }
 
-    @media screen and (min-width:720px) and (max-width:1366px)
+    @media screen and (min-width:720px) and (max-width:1367px)
     {
     .lds-ring{
         left: 45%;        
@@ -738,8 +814,18 @@ margin-right: 13px;
     .likefill
     {
         font-size: 1.4em;        
-        right: 18px;
-        bottom: 26px;        
+        right: 27px;
+        bottom: 31px;
+        width: 14px;
+        height: 21px;                       
+    }
+    .fill2
+    {
+        right: 17px;
+        bottom: 31px;
+        width: 14px;
+        height: 20px;        
+
     }
 
     .likefillmenu
