@@ -21,6 +21,8 @@ main
     animation:load 0.2s;
     animation-fill-mode: backwards;
     animation-delay: 3s;
+    width: 80px;
+    margin-left: 30px;
 }
 
 
@@ -321,7 +323,7 @@ height: 22px;
     transform-origin: bottom;
     opacity: 0;    
 }
-#animhomecoeur
+.animhomecoeur
     {
         &:hover .likefill
         {
@@ -389,7 +391,8 @@ color: $color-blanc;
 display: flex;
 width: 79%;
 justify-content: space-between;
-padding: 1% auto 1%;
+padding-top: 1%;
+padding-bottom:  1%;
 flex-direction: column;
 font-size:$font-size-textr;
 }

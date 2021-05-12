@@ -98,7 +98,7 @@
     opacity: 0;
   }
   30% {
-    transform: rotate(290eg);
+    transform: rotate(290deg);
     opacity: 1;
   }
   50% {
@@ -134,6 +134,8 @@ main {
   animation: load 0.2s;
   animation-fill-mode: backwards;
   animation-delay: 3s;
+  width: 80px;
+  margin-left: 30px;
 }
 
 body {
@@ -163,7 +165,7 @@ ul {
 }
 
 .buttons {
-  background: linear-gradient(345deg, #9356dc 3%, #ff79da 98%);
+  background: linear-gradient(0deg, #9356dc 8%, #ff79da 100%);
   color: #ffffff !important;
   width: fit-content;
   padding: 14px;
@@ -172,7 +174,7 @@ ul {
   margin-top: 2%;
 }
 .buttons:hover {
-  background: linear-gradient(345deg, #9356dc 0%, #ff79da 7%);
+  background: radial-gradient(circle, #ff79da 85%, #9356dc 100%);
   box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
 }
 
@@ -400,19 +402,19 @@ ul {
   opacity: 0;
 }
 
-#animhomecoeur:hover .likefill {
+.animhomecoeur:hover .likefill {
   animation: filllike 500ms ease-in;
   animation-fill-mode: both;
 }
-#animhomecoeur:hover .fill2 {
+.animhomecoeur:hover .fill2 {
   animation: like2 500ms ease-in;
   animation-fill-mode: both;
 }
-#animhomecoeur:hover .likefillrest {
+.animhomecoeur:hover .likefillrest {
   animation: filllike 500ms ease-in;
   animation-fill-mode: both;
 }
-#animhomecoeur:hover .fill2rest {
+.animhomecoeur:hover .fill2rest {
   animation: like2 500ms ease-in;
   animation-fill-mode: both;
 }
@@ -454,7 +456,8 @@ a:visited {
   display: flex;
   width: 79%;
   justify-content: space-between;
-  padding: 1% auto 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   flex-direction: column;
   font-size: 4vw;
 }
@@ -474,8 +477,8 @@ li {
 .lds-ring {
   display: inline-block;
   position: fixed;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   top: 41%;
   left: 36%;
   color: #9356DC;
@@ -485,8 +488,8 @@ li {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 8px;
   border: 8px solid #FF79DA;
   border-radius: 50%;
@@ -527,7 +530,7 @@ li {
   }
 
   .buttons:hover {
-    background: linear-gradient(345deg, #9356dc 0%, #ff79da 7%);
+    background: radial-gradient(circle, #ff79da 85%, #9356dc 100%);
     box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
   }
 
@@ -719,7 +722,7 @@ li {
   }
 
   .buttons:hover {
-    background: linear-gradient(345deg, #9356dc 0%, #ff79da 7%);
+    background: radial-gradient(circle, #ff79da 85%, #9356dc 100%);
     box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.99);
   }
 
@@ -886,7 +889,7 @@ li {
   box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
 }
 
-#animhomecoeur {
+.animhomecoeur {
   height: 0;
 }
 

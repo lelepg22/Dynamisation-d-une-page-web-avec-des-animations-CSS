@@ -1,184 +1,172 @@
-@mixin newtag 
-{
-    background-color:$color-tertiare;
-    color:#008866;
-    font-weight: bold;
-    width: fit-content;    
-    height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;       
-    padding-left: 6px;
-    padding-right: 6px;
+@mixin newtag {
+  background-color: $color-tertiare;
+  color: #008866;
+  font-weight: bold;
+  width: fit-content;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
-@mixin box-shadow
-{
-    box-shadow: 0px 4px 10px -4px rgb(0 0 0 / 30%);
+@mixin box-shadow {
+  box-shadow: 0px 4px 10px -4px rgb(0 0 0 / 30%);
 }
 
-@mixin buttoneffect
-{
-    background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 7%);
-    box-shadow: 0px 4px 20px -4px rgb(0 0 0 / 99%);
+@mixin buttoneffect {
+  background: radial-gradient(circle, rgba(255,121,218,1) 85%, rgba(147,86,220,1) 100%);
+  box-shadow: 0px 4px 20px -4px rgb(0 0 0 / 99%);
 }
 
-@mixin hearts
-{
-    #heart {
-        position: relative;
-        width: 100px;
-        height: 90px;
-        margin-top: 10px;
-      }
-      
-      #heart::before, #heart::after {
-        content: "";
-        position: absolute;
-        bottom: 123px;
-        margin-left: 493px;
-        width: 12px;
-        height: 18px;
-        border-radius: 50px 50px 0 0;
-        background: $color-gradient;
-      }
-      
-      #heart::before {
-        left: 50px;
-        transform: rotate(-45deg);
-        transform-origin: 0 100%;
-      }
-      
-      #heart::after {
-        left: 39px;
-        transform: rotate(45deg);
-        transform-origin: 100% 100%;
-      }
+@mixin hearts {
+  #heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+  }
+
+  #heart::before,
+  #heart::after {
+    content: "";
+    position: absolute;
+    bottom: 123px;
+    margin-left: 493px;
+    width: 12px;
+    height: 18px;
+    border-radius: 50px 50px 0 0;
+    background: $color-gradient;
+  }
+
+  #heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+
+  #heart::after {
+    left: 39px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
 }
-@mixin loadpage
-{
-    .lds-ring {
-        display: inline-block;
-        position: fixed;
-        width: 80px;
-        height: 80px;
-        top: 41%;
-        left: 36%;
-        color: $color-primaire;
-       
-      }
-      .lds-ring div {
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        margin: 8px;
-        border: 8px solid $color-secondaire;
-        border-radius: 50%;
-        animation: lds-ring 3.89s cubic-bezier(0.5, 0, 0.5, 1);
-        animation-fill-mode: forwards;
-        border-color: $color-primaire transparent transparent transparent;
-      }
-      .lds-ring div:nth-child(1) {
-        animation-delay: -0.45s;
-      }
-      .lds-ring div:nth-child(2) {
-        animation-delay: -0.3s;
-      }
-      .lds-ring div:nth-child(3) {
-        animation-delay: -0.15s;
-      }
-      .lds-ring p {
-        padding-top: 38%;
-        margin-left: 39%;
-        font-weight: bolder;
-      }
+@mixin loadpage {
+  .lds-ring {
+    display: inline-block;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 41%;
+    left: 36%;
+    color: $color-primaire;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+    border: 8px solid $color-secondaire;
+    border-radius: 50%;
+    animation: lds-ring 3.89s cubic-bezier(0.5, 0, 0.5, 1);
+    animation-fill-mode: forwards;
+    border-color: $color-primaire transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  .lds-ring p {
+    padding-top: 38%;
+    margin-left: 39%;
+    font-weight: bolder;
+  }
 }
 
+@mixin heartfill {
+  color: $color-primaire;
+  transform-origin: bottom;
+  opacity: 0;
+}
 
-@mixin heartfill
-{
-    color:$color-primaire;
-    transform-origin: bottom;
+@mixin menuitemanimation {
+  &__entree1 {
     opacity: 0;
-}
-
-@mixin menuitemanimation
-{
-  &__entree1{
-    opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 400ms;
     transform-origin: top;
     animation-fill-mode: forwards;
-}
-&__entree2{
+  }
+  &__entree2 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 500ms;
     transform-origin: top;
     animation-fill-mode: forwards;
-}
-&__entree3{
+  }
+  &__entree3 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 600ms;
     transform-origin: top;
     animation-fill-mode: forwards;
-}
-&__entree4{
+  }
+  &__entree4 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 650ms;
     transform-origin: top;
     animation-fill-mode: forwards;
-}
+  }
 
-&__plat1{
+  &__plat1 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 750ms;
     transform-origin: top;
-    animation-fill-mode: forwards;        
-}
-&__plat2{
+    animation-fill-mode: forwards;
+  }
+  &__plat2 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 850ms;
     transform-origin: top;
-    animation-fill-mode: forwards;        
-}
-&__plat3{
+    animation-fill-mode: forwards;
+  }
+  &__plat3 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 850ms;
     transform-origin: top;
-    animation-fill-mode: forwards;        
-}
-&__dessert1{
+    animation-fill-mode: forwards;
+  }
+  &__dessert1 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 950ms;
     transform-origin: top;
-    animation-fill-mode: forwards; 
-
-}
-&__dessert2{
+    animation-fill-mode: forwards;
+  }
+  &__dessert2 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 1050ms;
     transform-origin: top;
-    animation-fill-mode: forwards; 
-
-}
-&__dessert3{
+    animation-fill-mode: forwards;
+  }
+  &__dessert3 {
     opacity: 0;
-    animation: opacitymenu 300ms ;
+    animation: opacitymenu 300ms;
     animation-delay: 1150ms;
     transform-origin: top;
-    animation-fill-mode: forwards; 
-
-}
-
+    animation-fill-mode: forwards;
+  }
 }
