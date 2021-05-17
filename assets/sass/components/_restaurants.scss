@@ -254,13 +254,13 @@ align-items: center;
 {
 
 position: relative;
-left: 82%;
+left: 82.6%;
 bottom: 29px; 
 transform: rotate(48deg);
 background: $color-gradientcoeur;
 border-top-right-radius: 50%;
 border-top-left-radius: 50%;
-width: 18px;
+width: 17px;
 height: 22px;
 @include heartfill;
 }
@@ -269,14 +269,14 @@ height: 22px;
 {
     content: '';    
     position: relative;
-    left: 85%;    
-    bottom: 52px;
+    left: 85.1%;    
+    bottom: 51px;
     background: $color-gradientcoeur; 
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;   
     width: 17px;
     transform: rotate(313deg);
-    height: 25px;   
+    height: 23px;   
     transform-origin: bottom;
     opacity: 0;    
 }

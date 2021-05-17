@@ -352,7 +352,7 @@ ul {
 }
 
 .like {
-  font-size: 6.5vw;
+  font-size: 2em;
   color: black;
 }
 
@@ -373,14 +373,14 @@ ul {
 .likefill {
   font-size: 6.5vw;
   position: absolute;
-  right: 28px;
-  bottom: 49px;
+  right: 30px;
+  bottom: 52px;
   transform: rotate(48deg);
   background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
-  width: 17px;
-  height: 22px;
+  width: 20px;
+  height: 25px;
   color: #9356DC;
   transform-origin: bottom;
   opacity: 0;
@@ -390,18 +390,21 @@ ul {
   content: "";
   font-size: 6.5vw;
   position: absolute;
-  right: 20px;
-  bottom: 48px;
+  right: 19px;
+  bottom: 49px;
   background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
-  width: 16px;
+  width: 20px;
   transform: rotate(313deg);
-  height: 23px;
+  height: 29px;
   transform-origin: bottom;
   opacity: 0;
 }
 
+.animhomecoeur {
+  position: relative;
+}
 .animhomecoeur:hover .likefill {
   animation: filllike 500ms ease-in;
   animation-fill-mode: both;
@@ -850,6 +853,10 @@ li {
     height: 20px;
   }
 
+  .animhomecoeur {
+    top: -1px;
+  }
+
   .likefillmenu {
     color: #9356DC;
     transform-origin: bottom;
@@ -1157,13 +1164,13 @@ li {
 }
 .menu .likefillrest {
   position: relative;
-  left: 82%;
+  left: 82.6%;
   bottom: 29px;
   transform: rotate(48deg);
   background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
-  width: 18px;
+  width: 17px;
   height: 22px;
   color: #9356DC;
   transform-origin: bottom;
@@ -1172,14 +1179,14 @@ li {
 .menu .fill2rest {
   content: "";
   position: relative;
-  left: 85%;
-  bottom: 52px;
+  left: 85.1%;
+  bottom: 51px;
   background: linear-gradient(218deg, #9356dc 34%, #ff79da 100%);
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   width: 17px;
   transform: rotate(313deg);
-  height: 25px;
+  height: 23px;
   transform-origin: bottom;
   opacity: 0;
 }

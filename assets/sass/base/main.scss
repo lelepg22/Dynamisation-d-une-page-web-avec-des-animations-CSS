@@ -269,7 +269,7 @@ margin: 3%;
 .like
 {
 
-font-size: 6.5vw;    
+font-size: 2em;    
 color: black;    
    
 }
@@ -296,14 +296,14 @@ color: black;
 {
 font-size: 6.5vw;
 position: absolute;
-right: 28px;
-bottom: 49px; 
+right: 30px;
+bottom: 52px; 
 transform: rotate(48deg);
 background: $color-gradientcoeur;
 border-top-right-radius: 50%;
 border-top-left-radius: 50%;
-width: 17px;
-height: 22px;
+width: 20px;
+height: 25px;
 @include heartfill;
 }
 
@@ -312,14 +312,14 @@ height: 22px;
     content: '';
     font-size: 6.5vw;
     position: absolute;
-    right:20px;
-    bottom:48px;
+    right:19px;
+    bottom:49px;
     background: $color-gradientcoeur; 
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;   
-    width: 16px;
+    width: 20px;
     transform: rotate(313deg);
-    height: 23px;   
+    height: 29px;   
     transform-origin: bottom;
     opacity: 0;    
 }
@@ -345,6 +345,7 @@ height: 22px;
         animation: like2 500ms ease-in;    
         animation-fill-mode: both;
         } 
+        position: relative;        
 
     }
 
@@ -829,6 +830,10 @@ margin-right: 13px;
         width: 14px;
         height: 20px;        
 
+    }
+    .animhomecoeur
+    {
+        top: -1px;
     }
 
     .likefillmenu
